@@ -10924,3 +10924,23 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+.custom-bg-white {
+  background-color: #fff;
+}
+
+.custom-bg-black {
+  background-color: #000;
+}
+
+.custom-bg-favicon-gray {
+  background-color: #b8b8b8;
+}
+
+.custom-text-white {
+  color: #fff;
+}
+
+.custom-text-black {
+  color: #000;
+}
