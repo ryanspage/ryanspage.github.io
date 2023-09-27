@@ -10383,8 +10383,8 @@ a:focus {
   margin-left: 0.25rem;
 }
 
-.sidebar.toggled .sidebar-card {
-  display: none;
+.sidebar.toggled .sidebar-card .sidebar-card-illustration {
+  height: 4.5rem;
 }
 
 .sidebar .sidebar-brand {
@@ -10428,12 +10428,12 @@ a:focus {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  padding: 1rem;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
 .sidebar .sidebar-card .sidebar-card-illustration {
-  height: 3rem;
+  height: 4.5rem;
+  border: 2px solid #b8b8b8;
   display: block;
 }
 
@@ -10505,6 +10505,9 @@ a:focus {
   }
   .sidebar .sidebar-heading {
     text-align: left;
+  }
+  .sidebar .sidebar-card .sidebar-card-illustration {
+    height: 9rem;
   }
   .sidebar.toggled {
     overflow: visible;
