@@ -10127,9 +10127,27 @@ a:focus {
   width: 25rem;
 }
 
+.topbar .navbar-search .google-search-logo {
+  padding-left: 3rem;
+  background: url("/img/google_g_logo.svg");
+  background-repeat: no-repeat;
+  background-position: 2.5% 50%;
+}
+
+.topbar .navbar-search .wiktionary-search-logo {
+  padding-left: 3rem;
+  background: url("/img/wiktionary_w_logo.svg");
+  background-repeat: no-repeat;
+  background-position: 1% 50%;
+}
+
 .topbar .navbar-search input {
   font-size: 0.85rem;
   height: auto;
+}
+
+.topbar .input-group {
+  width: 100%;
 }
 
 .topbar .topbar-divider {
@@ -10223,7 +10241,7 @@ a:focus {
     position: relative;
   }
   .topbar .dropdown .dropdown-menu {
-    width: auto;
+    width: 25rem;
     right: 0;
   }
   .topbar .dropdown-list {

@@ -13,10 +13,25 @@
   }
   .navbar-search {
     width: 25rem;
+    .google-search-logo {
+      padding-left: 3rem;
+      background: url("/img/google_g_logo.svg");
+      background-repeat: no-repeat;
+      background-position: 2.5% 50%;
+    }
+    .wiktionary-search-logo {
+      padding-left: 3rem;
+      background: url("/img/wiktionary_w_logo.svg");
+      background-repeat: no-repeat;
+      background-position: 1% 50%;
+    }
     input {
       font-size: 0.85rem;
       height: auto;
     }
+  }
+  .input-group {
+    width: 100%;
   }
   .topbar-divider {
     width: 0;
@@ -96,7 +111,7 @@
     .dropdown {
       position: relative;
       .dropdown-menu {
-        width: auto;
+        width: 25rem;
         right: 0;
       }
     }
