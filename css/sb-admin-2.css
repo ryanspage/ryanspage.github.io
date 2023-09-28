@@ -10177,6 +10177,7 @@ a:focus {
 }
 
 .topbar .dropdown .dropdown-menu {
+  max-width: 25rem;
   width: calc(100% - 1.5rem);
   right: 0.75rem;
 }
@@ -10236,7 +10237,7 @@ a:focus {
   color: #3a3b45;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .topbar .dropdown {
     position: relative;
   }

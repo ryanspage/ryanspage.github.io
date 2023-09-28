@@ -56,6 +56,7 @@
   .dropdown {
     position: static;
     .dropdown-menu {
+      max-width: 25rem;
       width: calc(100% - #{$grid-gutter-width});
       right: $grid-gutter-width / 2;
     }
@@ -107,7 +108,7 @@
       }
     }
   }
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     .dropdown {
       position: relative;
       .dropdown-menu {

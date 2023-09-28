@@ -145,11 +145,11 @@
 
                     <!-- Topbar Google Search -->
                     <form method="get" action="https://www.google.com/search" target="_blank"
-                        onsubmit="this.submit();this.reset();document.activeElement.blur();return false;"
+                        onsubmit="this.submit();document.activeElement.blur();return false;"
                         class="d-none d-lg-inline-block form-inline ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" name="q" class="input form-control bg-light border-0 small google-search-logo" placeholder="Search Google"
-                                aria-label="Search" aria-describedby="basic-addon2">
+                                aria-label="Search" aria-describedby="basic-addon2" onfocus="this.select()">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -187,15 +187,14 @@
 
                                 <!-- Dropdown Google Search -->
                                 <form method="get" action="https://www.google.com/search" target="_blank"
-                                    onsubmit="this.submit();this.reset();document.activeElement.blur();return false;"
+                                    onsubmit="this.submit();document.activeElement.blur();return false;"
                                     class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
                                         <input type="text" name="q" class="form-control bg-light border-0 small
-                                            google-search-logo"
-                                            placeholder="Search Google" aria-label="Search"
-                                            aria-describedby="basic-addon2">
+                                            google-search-logo" placeholder="Search Google" aria-label="Search"
+                                            aria-describedby="basic-addon2" onfocus="this.select()">
                                         <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
+                                            <button type="submit" class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
                                             </button>
                                         </div>
