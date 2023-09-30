@@ -148,7 +148,7 @@
                         onsubmit="this.submit();document.activeElement.blur();return false;" autocomplete="off"
                         class="d-none d-lg-inline-block form-inline ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" name="q" class="input form-control bg-light border-0 small google-search-logo" placeholder="Search Google"
+                            <input type="text" autocapitalize="off" name="q" class="input form-control bg-light border-0 small google-search-logo" placeholder="Search Google"
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-primary">
@@ -162,7 +162,8 @@
                     <form onsubmit="wiktionarySearch(0,this.wiktionarySearchText.value);document.activeElement.blur();return false;" autocomplete="off"
                         class="d-none d-lg-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" name="wiktionarySearchText" class="form-control bg-light border-0 small wiktionary-search-logo" placeholder="Search Wiktionary"
+                            <input type="text" autocapitalize="off" name="wiktionarySearchText"
+                                class="form-control bg-light border-0 small wiktionary-search-logo" placeholder="Search Wiktionary"
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-primary">
@@ -214,9 +215,8 @@
                                     onsubmit="this.submit();document.activeElement.blur();return false;"
                                     autocomplete="off" class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" name="q" class="form-control bg-light border-0 small
-                                            google-search-logo" placeholder="Search Google" aria-label="Search"
-                                            aria-describedby="basic-addon2">
+                                        <input type="text" autocapitalize="off" name="q" class="form-control bg-light border-0 small
+                                            google-search-logo" placeholder="Search Google" aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button type="submit" class="btn btn-primary">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -232,7 +232,7 @@
                                 <form onsubmit="wiktionarySearch(1, this.wiktionarySearchText.value);document.activeElement.blur();return false;"
                                     autocomplete="off" class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" name="wiktionarySearchText"
+                                        <input type="text" autocapitalize="off" name="wiktionarySearchText"
                                             class="form-control bg-light border-0 small wiktionary-search-logo"
                                             placeholder="Search Wiktionary" aria-label="Search"
                                             aria-describedby="basic-addon2">
