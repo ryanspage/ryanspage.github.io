@@ -145,13 +145,13 @@
 
                     <!-- Topbar Google Search -->
                     <form method="get" action="https://www.google.com/search" target="_blank"
-                        onsubmit="this.submit();document.activeElement.blur();return false;"
+                        onsubmit="this.submit();document.activeElement.blur();return false;" autocomplete="off"
                         class="d-none d-lg-inline-block form-inline ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" name="q" class="input form-control bg-light border-0 small google-search-logo" placeholder="Search Google"
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button type="submit" class="btn btn-primary" type="button">
+                                <button type="submit" class="btn btn-primary">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
@@ -159,13 +159,13 @@
                     </form>
 
                     <!-- Topbar Wiktionary Search -->
-                    <form
+                    <form onsubmit="wiktionarySearch(0,this.wiktionarySearchText.value);document.activeElement.blur();return false;" autocomplete="off"
                         class="d-none d-lg-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small wiktionary-search-logo" placeholder="Search Wiktionary"
+                            <input type="text" name="wiktionarySearchText" class="form-control bg-light border-0 small wiktionary-search-logo" placeholder="Search Wiktionary"
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
+                                <button type="submit" class="btn btn-primary">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
 
@@ -176,16 +176,16 @@
                                 <div class="dropdown-menu dropdown-menu-right p-2 shadow animated--grow-in" id="dropdown-wiktionary-lang-select">
                                     <form class="form-inline justify-content-center">
                                       <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-outline-primary btn-wiktionary-lang active">
-                                          <input type="radio" class="btn-check" name="section" id="langEnglish1" autocomplete="off" checked>
+                                        <label name="langs1" class="btn btn-outline-primary btn-wiktionary-lang active">
+                                          <input type="radio" class="btn-check" name="section" autocomplete="off" checked>
                                           English
                                         </label>
-                                        <label class="btn btn-outline-primary btn-wiktionary-lang">
-                                          <input type="radio" class="btn-check" name="section" id="langLatin1" autocomplete="off">
+                                        <label name="langs1" class="btn btn-outline-primary btn-wiktionary-lang">
+                                          <input type="radio" class="btn-check" name="section" autocomplete="off">
                                           Latin
                                         </label>
-                                        <label class="btn btn-outline-primary btn-wiktionary-lang">
-                                          <input type="radio" class="btn-check" name="section" id="langHellenike1" autocomplete="off">
+                                        <label name="langs1" class="btn btn-outline-primary btn-wiktionary-lang">
+                                          <input type="radio" class="btn-check" name="section" autocomplete="off">
                                           Ἑλληνική
                                         </label>
                                       </div>
@@ -212,13 +212,13 @@
                                 <!-- Dropdown Google Search -->
                                 <form method="get" action="https://www.google.com/search" target="_blank"
                                     onsubmit="this.submit();document.activeElement.blur();return false;"
-                                    class="form-inline mr-auto w-100 navbar-search">
+                                    autocomplete="off" class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
                                         <input type="text" name="q" class="form-control bg-light border-0 small
                                             google-search-logo" placeholder="Search Google" aria-label="Search"
                                             aria-describedby="basic-addon2">
                                         <div class="input-group-append">
-                                            <button type="submit" class="btn btn-primary" type="button">
+                                            <button type="submit" class="btn btn-primary">
                                                 <i class="fas fa-search fa-sm"></i>
                                             </button>
                                         </div>
@@ -229,14 +229,15 @@
                                 <hr class="sidebar-divider">
 
                                 <!-- Dropdown Wiktionary Search -->
-                                <form class="form-inline mr-auto w-100 navbar-search">
+                                <form onsubmit="wiktionarySearch(1, this.wiktionarySearchText.value);document.activeElement.blur();return false;"
+                                    autocomplete="off" class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small
-                                            wiktionary-search-logo"
+                                        <input type="text" name="wiktionarySearchText"
+                                            class="form-control bg-light border-0 small wiktionary-search-logo"
                                             placeholder="Search Wiktionary" aria-label="Search"
                                             aria-describedby="basic-addon2">
                                         <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
+                                            <button  type="submit" class="btn btn-primary">
                                                 <i class="fas fa-search fa-sm"></i>
                                             </button>
                                         </div>
@@ -246,16 +247,16 @@
                                 <!-- Language Selection -->
                                 <form class="form-inline justify-content-center mt-3">
                                   <div class="btn-group btn-group-toggle flex-wrap" data-toggle="buttons">
-                                    <label class="btn btn-outline-primary btn-wiktionary-lang btn-wiktionary-lang-flex active">
-                                      <input type="radio" class="btn-check" name="section" id="langEnglish2" autocomplete="off" checked>
+                                    <label name="langs2" class="btn btn-outline-primary btn-wiktionary-lang btn-wiktionary-lang-flex active">
+                                      <input type="radio" class="btn-check" name="section" autocomplete="off" checked>
                                       English
                                     </label>
-                                    <label class="btn btn-outline-primary btn-wiktionary-lang btn-wiktionary-lang-flex">
-                                      <input type="radio" class="btn-check" name="section" id="langLatin2" autocomplete="off">
+                                    <label name="langs2" class="btn btn-outline-primary btn-wiktionary-lang btn-wiktionary-lang-flex">
+                                      <input type="radio" class="btn-check" name="section" autocomplete="off">
                                       Latin
                                     </label>
-                                    <label class="btn btn-outline-primary btn-wiktionary-lang btn-wiktionary-lang-flex">
-                                      <input type="radio" class="btn-check" name="section" id="langHellenike2" autocomplete="off">
+                                    <label name="langs2" class="btn btn-outline-primary btn-wiktionary-lang btn-wiktionary-lang-flex">
+                                      <input type="radio" class="btn-check" name="section" autocomplete="off">
                                       Ἑλληνική
                                     </label>
                                   </div>
