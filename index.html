@@ -168,6 +168,30 @@
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
+
+                                <!-- Language Selection Dropdown -->
+                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="btn-wiktionary-lang-select"
+                                  aria-haspopup="true" aria-expanded="false">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" id="dropdown-wiktionary-lang-select">
+                                    <form class="form-inline justify-content-center">
+                                      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-outline-primary active">
+                                          <input type="radio" class="btn-check" name="section" id="langEnglish1" autocomplete="off" checked>
+                                          &nbsp English &nbsp
+                                        </label>
+                                        <label class="btn btn-outline-primary">
+                                          <input type="radio" class="btn-check" name="section" id="langLatin1" autocomplete="off">
+                                          &nbsp Latin &nbsp
+                                        </label>
+                                        <label class="btn btn-outline-primary">
+                                          <input type="radio" class="btn-check" name="section" id="langHellenike1" autocomplete="off">
+                                          &nbsp Ἑλληνική &nbsp
+                                        </label>
+                                      </div>
+                                    </form>
+                                </div>
+
                             </div>
                         </div>
                     </form>
@@ -218,6 +242,25 @@
                                         </div>
                                     </div>
                                 </form>
+
+                                <!-- Language Selection -->
+                                <form class="form-inline justify-content-center mt-3">
+                                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary active">
+                                      <input type="radio" class="btn-check" name="section" id="langEnglish2" autocomplete="off" checked>
+                                      &nbsp English &nbsp
+                                    </label>
+                                    <label class="btn btn-outline-primary">
+                                      <input type="radio" class="btn-check" name="section" id="langLatin2" autocomplete="off">
+                                      &nbsp Latin &nbsp
+                                    </label>
+                                    <label class="btn btn-outline-primary">
+                                      <input type="radio" class="btn-check" name="section" id="langHellenike2" autocomplete="off">
+                                      &nbsp Ἑλληνική &nbsp
+                                    </label>
+                                  </div>
+                              </form>
+
                             </div>
                         </li>
 
@@ -683,7 +726,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2023-09-28</span>
+                        <span>Last Modified 2023-09-29</span>
                     </div>
                 </div>
             </footer>
@@ -729,6 +772,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/custom.min.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
