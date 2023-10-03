@@ -1,19 +1,21 @@
-/* Toggle Open & Close of Wiktionary Language Selection Dropdown */
-$("#btn-wiktionary-lang-select").on('click', function (event) {
-  $("#dropdown-wiktionary-lang-select").toggleClass('show');
-});
+(function($) {
+  /* Toggle Open & Close of Wiktionary Language Selection Dropdown */
+  $("#btn-wiktionary-lang-select").on('click', function (event) {
+    $("#dropdown-wiktionary-lang-select").toggleClass('show');
+  });
 
-/* Close Wiktionary Language Selection Dropdown if Click Outside Dropdown */
-$('body').on('click', function (e) {
-    const btnWiktionaryLangSelect = document.getElementById("btn-wiktionary-lang-select");
-    const wiktionaryDropdownLangSelect = document.getElementById("dropdown-wiktionary-lang-select");
-    if (btnWiktionaryLangSelect !== e.target &&
-        wiktionaryDropdownLangSelect !== e.target &&
-        !wiktionaryDropdownLangSelect.contains(e.target))
-    {
-      wiktionaryDropdownLangSelect.classList.remove('show');
-    }
-});
+  /* Close Wiktionary Language Selection Dropdown if Click Outside Dropdown */
+  $('body').on('click', function (e) {
+      const btnWiktionaryLangSelect = document.getElementById("btn-wiktionary-lang-select");
+      const wiktionaryDropdownLangSelect = document.getElementById("dropdown-wiktionary-lang-select");
+      if (btnWiktionaryLangSelect !== e.target &&
+          wiktionaryDropdownLangSelect !== e.target &&
+          !wiktionaryDropdownLangSelect.contains(e.target))
+      {
+        wiktionaryDropdownLangSelect.classList.remove('show');
+      }
+  });
+})(jQuery);
 
 /* Wiktionary Search */
 function wiktionarySearch(searchBar, searchText) {
