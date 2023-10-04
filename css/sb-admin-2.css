@@ -10747,14 +10747,21 @@ a:focus {
   padding: 0.5rem 1rem;
 }
 
-.btn-wiktionary-lang {
+.btn-group-dropdown {
   margin-left: 0.075rem !important;
   margin-right: 0.075rem !important;
   border-radius: 0.35rem !important;
 }
 
-.btn-wiktionary-lang-flex {
+.btn-group-dropdown-flex {
   flex: 1 1 0 !important;
+}
+
+.btn-link-icon {
+  border: none;
+  box-shadow: none !important;
+  outline: none;
+  padding: 1px 6px;
 }
 
 .card .card-header .dropdown {
@@ -10975,4 +10982,9 @@ body.sidebar-toggled footer.sticky-footer {
 
 .custom-text-black {
   color: #000;
+}
+
+.img-icon-32 {
+  width: 32px;
+  height: 32px;
 }

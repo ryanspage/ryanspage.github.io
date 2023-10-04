@@ -39,7 +39,7 @@
             <!-- Sidebar - Site Logo & Title -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <img src="/img/letter_r_gray.svg" width="32" height="32">
+                    <img src="/img/letter_r_gray.svg" class="img-icon-32">
                 </div>
                 <div class="sidebar-brand-text mx-3">Ryan's Page</div>
             </a>
@@ -180,15 +180,15 @@
                                 <div class="dropdown-menu dropdown-menu-right p-2 shadow animated--grow-in" id="dropdown-wiktionary-lang-select">
                                     <form class="form-inline justify-content-center">
                                       <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                        <label name="langs1" class="btn btn-outline-primary btn-wiktionary-lang active">
+                                        <label name="langs1" class="btn btn-outline-primary btn-group-dropdown active">
                                           <input type="radio" class="btn-check" name="section" autocomplete="off" checked>
                                           English
                                         </label>
-                                        <label name="langs1" class="btn btn-outline-primary btn-wiktionary-lang">
+                                        <label name="langs1" class="btn btn-outline-primary btn-group-dropdown">
                                           <input type="radio" class="btn-check" name="section" autocomplete="off">
                                           Latin
                                         </label>
-                                        <label name="langs1" class="btn btn-outline-primary btn-wiktionary-lang">
+                                        <label name="langs1" class="btn btn-outline-primary btn-group-dropdown">
                                           <input type="radio" class="btn-check" name="section" autocomplete="off">
                                           Ἑλληνική
                                         </label>
@@ -250,15 +250,15 @@
                                 <!-- Language Selection -->
                                 <form class="form-inline justify-content-center mt-3">
                                   <div class="btn-group btn-group-toggle flex-wrap" data-toggle="buttons">
-                                    <label name="langs2" class="btn btn-outline-primary btn-wiktionary-lang btn-wiktionary-lang-flex active">
+                                    <label name="langs2" class="btn btn-outline-primary btn-group-dropdown btn-group-dropdown-flex active">
                                       <input type="radio" class="btn-check" name="section" autocomplete="off" checked>
                                       English
                                     </label>
-                                    <label name="langs2" class="btn btn-outline-primary btn-wiktionary-lang btn-wiktionary-lang-flex">
+                                    <label name="langs2" class="btn btn-outline-primary btn-group-dropdown btn-group-dropdown-flex">
                                       <input type="radio" class="btn-check" name="section" autocomplete="off">
                                       Latin
                                     </label>
-                                    <label name="langs2" class="btn btn-outline-primary btn-wiktionary-lang btn-wiktionary-lang-flex">
+                                    <label name="langs2" class="btn btn-outline-primary btn-group-dropdown btn-group-dropdown-flex">
                                       <input type="radio" class="btn-check" name="section" autocomplete="off">
                                       Ἑλληνική
                                     </label>
@@ -274,14 +274,14 @@
                         <!-- Nav Item - Link #1 -->
                         <li class="nav-item d-none d-xl-block">
                             <a class="nav-link" href="https://www.cnn.com/" target="_blank" data-toggle="tooltip" title="CNN">
-                                <img src="/img/link-icons/cnn.ico" width="32" height="32">
+                                <img src="/img/link-icons/cnn.ico" class="img-icon-32">
                             </a>
                         </li>
 
                         <!-- Nav Item - Link #2 -->
                         <li class="nav-item d-none d-xl-block">
                             <a class="nav-link" href="https://arstechnica.com/" target="_blank" data-toggle="tooltip" title="Ars Technica">
-                                <img src="/img/link-icons/ars_technica.ico" width="32" height="32">
+                                <img src="/img/link-icons/ars_technica.ico" class="img-icon-32">
                             </a>
                         </li>
 
@@ -289,21 +289,21 @@
                         <li class="nav-item d-none d-xl-block">
                             <a class="nav-link" href="https://forecast.weather.gov/MapClick.php?lat=30.7166&lon=-95.5536"
                               target="_blank" data-toggle="tooltip" title="NWS">
-                                <img src="/img/link-icons/nws.svg" width="32" height="32">
+                                <img src="/img/link-icons/nws.svg" class="img-icon-32">
                             </a>
                         </li>
 
                         <!-- Nav Item - Link #4 -->
                         <li class="nav-item d-none d-xl-block">
                             <a class="nav-link" href="https://www.youtube.com/" target="_blank" data-toggle="tooltip" title="YouTube">
-                                <img src="/img/link-icons/youtube.png" width="32" height="32">
+                                <img src="/img/link-icons/youtube.png" class="img-icon-32">
                             </a>
                         </li>
 
                         <!-- Nav Item - Link #5 -->
                         <li class="nav-item d-none d-xl-block">
                             <a class="nav-link" href="https://www.wikipedia.org/" target="_blank" data-toggle="tooltip" title="Wikipedia">
-                                <img src="/img/link-icons/wikipedia.ico" width="32" height="32">
+                                <img src="/img/link-icons/wikipedia.ico" class="img-icon-32">
                             </a>
                         </li>
                         <!-- End of Link Icons -->
@@ -315,7 +315,33 @@
                                 <i class="fas fa-angle-double-down fa-fw"></i>
                             </a>
                             <!-- Dropdown - Links -->
-                            <!-- Dropdown HERE -->
+                            <div class="dropdown-menu dropdown-menu-right p-2 shadow animated--grow-in" aria-labelledby="linkDropdown" style="max-width:16rem">
+                               <form class="form-inline justify-content-center">
+                                  <div class="btn-group btn-group-toggle flex-wrap" data-toggle="buttons">
+                                     <a class="btn btn-group-dropdown btn-group-dropdown-flex btn-link-icon custom-bg-white"
+                                      href="https://www.cnn.com/" target="_blank" data-toggle="tooltip" title="CNN">
+                                        <img src="/img/link-icons/cnn.ico" class="img-icon-32">
+                                     </a>
+                                     <a class="btn btn-group-dropdown btn-group-dropdown-flex btn-link-icon custom-bg-white"
+                                      href="https://arstechnica.com/" target="_blank" data-toggle="tooltip" title="Ars Technica">
+                                        <img src="/img/link-icons/ars_technica.ico" class="img-icon-32">
+                                     </a>
+                                     <a class="btn btn-group-dropdown btn-group-dropdown-flex btn-link-icon custom-bg-white"
+                                      href="https://forecast.weather.gov/MapClick.php?lat=30.7166&lon=-95.5536"
+                                      target="_blank" data-toggle="tooltip" title="NWS">
+                                        <img src="/img/link-icons/nws.svg" class="img-icon-32">
+                                     </a>
+                                     <a class="btn btn-group-dropdown btn-group-dropdown-flex btn-link-icon custom-bg-white"
+                                      href="https://www.youtube.com/" target="_blank" data-toggle="tooltip" title="YouTube">
+                                        <img src="/img/link-icons/youtube.png" class="img-icon-32">
+                                     </a>
+                                     <a class="btn btn-group-dropdown btn-group-dropdown-flex btn-link-icon custom-bg-white"
+                                      href="https://www.wikipedia.org/" target="_blank" data-toggle="tooltip" title="Wikipedia">
+                                        <img src="/img/link-icons/wikipedia.ico" class="img-icon-32">
+                                     </a>
+                                  </div>
+                               </form>
+                            </div>
                         </li>
 
                     </ul>
@@ -329,8 +355,6 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Salvēte, χαίρετε!</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
                     <!-- Content Row -->
