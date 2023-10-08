@@ -31,7 +31,7 @@
 
   //Set Countdown Titles
   document.getElementById('countdown-rome').innerHTML = ('Dies Natalis Romae ').concat(romeYear);
-  document.getElementById('countdown-halloween').innerHTML = ('Halloween ').concat(halloweenYear);
+  document.getElementById('countdown-halloween').innerHTML = ('&nbsp;Halloween ').concat(halloweenYear + '&nbsp;');
   document.getElementById('countdown-christmas').innerHTML = ('Christmas ').concat(christmasYear);
 
   // Rome Countdown Finished (Only on 04/21)
@@ -55,7 +55,7 @@
 
   // Halloween Countdown Finished (Only on 10/31)
   $('#clock-halloween').countdown(halloweenCountdownStr).on('finish.countdown', function(event) {
-    document.getElementById('countdown-halloween').innerHTML = 'Happy Halloween!';
+    document.getElementById('countdown-halloween').innerHTML = '&nbsp;Happy Halloween&nbsp;';
     var $this = $(this).html(event.strftime(''
       + '<div class="holder m-2"><span class="h3 font-weight-bold">00</span> Day%!D</div>'
       + '<div class="holder m-2"><span class="h3 font-weight-bold">00</span> Hr%!H</div>'
