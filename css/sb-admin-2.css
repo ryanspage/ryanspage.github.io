@@ -11034,13 +11034,13 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 .bg-gradient-rome {
-  background: #d21404;
+  background: #717577;
   background: linear-gradient(to top right, #edc967, #717577, #edc967, #717577);
 }
 
 .bg-gradient-halloween {
   background: #dc5200;
-  background: linear-gradient(to right, #dc5200, #ff7726, #dc5200);
+  background: linear-gradient(to right, #dc5200, #ff7c2e, #dc5200);
 }
 
 .bg-gradient-christmas {
