@@ -548,7 +548,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2023-10-07</span>
+                        <span>Last Modified 2023-10-08</span>
                     </div>
                 </div>
             </footer>
@@ -567,14 +567,32 @@
 
     <!-- Countdown Modal -->
     <div class="modal fade" id="countdownModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <div class="container-fluid">
+            <div class="container-fluid px-2">
               <div class="row text-center">
-                <div class="col-lg-4">Column 1</div>
-                <div class="col-lg-4">Column 2</div>
-                <div class="col-lg-4">Column 3</div>
+                <!-- Rome Countdown -->
+                <div class="col-lg-4 p-2">
+                  <div class="rounded bg-gradient-rome countdown-text-rome p-2 shadow text-center">
+                    <p class="mb-2 font-weight-bold text-uppercase" id="countdown-rome"></p>
+                    <div id="clock-rome" class="countdown-boxes d-flex flex-wrap justify-content-center pt-2"></div>
+                  </div>
+                </div>
+                <!-- Halloween Countdown -->
+                <div class="col-lg-4 p-2">
+                  <div class="rounded bg-gradient-halloween custom-text-black p-2 shadow text-center">
+                    <p class="mb-2 font-weight-bold text-uppercase" id="countdown-halloween"></p>
+                    <div id="clock-halloween" class="countdown-boxes d-flex flex-wrap justify-content-center pt-2"></div>
+                  </div>
+                </div>
+                <!-- Christmas Countdown -->
+                <div class="col-lg-4 p-2">
+                  <div class="rounded bg-gradient-christmas custom-text-white p-2 shadow text-center">
+                    <p class="mb-2 font-weight-bold text-uppercase" id="countdown-christmas"></p>
+                    <div id="clock-christmas" class="countdown-boxes d-flex flex-wrap justify-content-center pt-2"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -594,14 +612,8 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
     <script src="js/custom.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 

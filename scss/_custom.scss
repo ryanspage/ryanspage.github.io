@@ -1,4 +1,4 @@
-// Background Colors
+/* Background Colors */
 .custom-bg-white {
   background-color: $white;
 }
@@ -10,18 +10,79 @@
 .custom-bg-favicon-gray {
   background-color: #b8b8b8;
 }
+/* End Background Colors */
 
-// Text Colors
+/* Text Colors */
 .custom-text-white {
-  color: $white;
+  color: $white !important;
 }
 
 .custom-text-black {
-  color: $black;
+  color: $black !important;
 }
+/* End Text Colors */
 
 // Icon Style 32x32
 .img-icon-32 {
   width: 32px;
   height: 32px;
 }
+
+/* Countdown Timers */
+.countdown {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.countdown span {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;
+    margin-left: 0.8rem;
+}
+
+.countdown span:first-of-type {
+    margin-left: 0;
+}
+
+.countdown-boxes {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.countdown-boxes span {
+    width: 60px;
+    height: 50px;
+    border-radius: 0%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-boxes span:first-of-type {
+    margin-left: 0;
+}
+
+.countdown-text-rome {
+  color: #343534;
+}
+
+.bg-gradient-rome {
+    background: #d21404;
+    background: -webkit-linear-gradient(to top right, #edc967, #717577, #edc967, #717577);
+    background: linear-gradient(to top right, #edc967, #717577, #edc967, #717577);
+}
+
+.bg-gradient-halloween {
+    background: #dc5200;
+    background: -webkit-linear-gradient(to right, #dc5200, #ff7726, #dc5200);
+    background: linear-gradient(to right, #dc5200, #ff7726, #dc5200);
+}
+
+.bg-gradient-christmas {
+    background: #34a65f;
+    background: -webkit-linear-gradient(to bottom right, #34a65f, #cc231e, #34a65f, #cc231e);
+    background: linear-gradient(to bottom right, #34a65f, #cc231e, #34a65f, #cc231e);
+}
+/* End Countdown Timers */
