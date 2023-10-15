@@ -45,7 +45,15 @@
 }
 
 .text-black {
-  color: #000;
+  color: $black;
+}
+
+.text-body {
+  color: $body-color;
+}
+
+.text-body-emphasis {
+  color: $body-emphasis-color;
 }
 
 .icon-circle {

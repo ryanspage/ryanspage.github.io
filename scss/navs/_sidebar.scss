@@ -69,17 +69,17 @@
                     padding: 0.5rem 1rem;
                     margin: 0 0.5rem;
                     display: block;
-                    color: $gray-900;
+                    color: fade-out($white, 0.2);
                     text-decoration: none;
                     border-radius: $border-radius;
                     white-space: nowrap;
 
                     &:hover {
-                        background-color: $gray-200;
+                        background-color: $dark-secondary;
                     }
 
                     &:active {
-                        background-color: $gray-300;
+                        background-color: $dark-secondary;
                     }
 
                     &.active {
@@ -173,10 +173,10 @@
         margin-left: 1rem;
         margin-right: 1rem;
         margin-bottom: 1rem;
-        background-color: fade-out($black, 0.9);
+        background-color: $dark-secondary;
         .sidebar-card-illustration {
             height: 4.5rem;
-            border: 2px solid #b8b8b8;
+            border: 2px solid $favicon-color;
             display: block;
         }
         .sidebar-card-title {
@@ -422,7 +422,7 @@
     }
 
     hr.sidebar-divider {
-        border-top: 1px solid fade-out($white, 0.85);
+        border-top: 1px solid $border-color;
     }
 
     .sidebar-heading {

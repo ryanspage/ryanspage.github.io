@@ -18,5 +18,17 @@
 
 // Custom Background Colors
 .bg-black {
-  background-color: #000;
+  background-color: $black;
+}
+
+.bg-dark-primary {
+  background-color: $dark-primary !important;
+}
+
+.bg-dark-secondary {
+  background-color: $dark-secondary !important;
+}
+
+.bg-dark-tertiary {
+  background-color: $dark-tertiary !important;
 }

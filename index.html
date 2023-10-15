@@ -34,7 +34,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-black sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-dark-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Site Logo & Title -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -70,7 +70,7 @@
                     <span>Ancient World</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
+                    <div class="bg-dark-tertiary py-2 collapse-inner rounded">
                         <a class="collapse-item" href="index.html">Roman History</a>
                         <a class="collapse-item" href="index.html">Latin + Ἑλληνική</a>
                     </div>
@@ -133,10 +133,10 @@
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
-            <div id="content">
+            <div id="content" class="bg-dark-primary">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-dark bg-dark-tertiary topbar mb-4 static-top shadow">
 
                     <!-- Topbar Sidebar Toggle (Only XS, S) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -144,15 +144,16 @@
                     </button>
 
                     <!-- Topbar Site Title (Only XS, S) -->
-                    <h1 class="h5 mb-0 text-gray-900 d-md-none">RYAN'S PAGE</h1>
+                    <h1 class="h5 mb-0 text-body-emphasis d-md-none">RYAN'S PAGE</h1>
 
                     <!-- Topbar Google Search -->
                     <form method="get" action="https://www.google.com/search" target="_blank"
                         onsubmit="this.submit();document.activeElement.blur();return false;" autocomplete="off"
                         class="d-none d-lg-inline-block form-inline ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" autocapitalize="off" name="q" class="input form-control bg-light border-0 small google-search-logo" placeholder="Search Google"
-                                aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" autocapitalize="off" name="q" class="input form-control bg-dark-secondary text-body
+                              border-0 small google-search-logo" placeholder="Search Google"
+                              aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fas fa-search fa-sm"></i>
@@ -166,7 +167,7 @@
                         class="d-none d-lg-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" autocapitalize="off" name="wiktionarySearchText"
-                                class="form-control bg-light border-0 small wiktionary-search-logo" placeholder="Search Wiktionary"
+                                class="form-control bg-dark-secondary text-body border-0 small wiktionary-search-logo" placeholder="Search Wiktionary"
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-primary">
@@ -177,7 +178,7 @@
                                 <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="btn-wiktionary-lang-select"
                                   aria-haspopup="true" aria-expanded="false">
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-right p-2 shadow animated--grow-in" id="dropdown-wiktionary-lang-select">
+                                <div class="dropdown-menu dropdown-menu-right bg-dark-tertiary p-2 shadow animated--grow-in" id="dropdown-wiktionary-lang-select">
                                     <form class="form-inline justify-content-center">
                                       <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                         <label name="langs1" class="btn btn-outline-primary btn-group-dropdown active">
@@ -210,7 +211,7 @@
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
                             <!-- Dropdown - Search -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                            <div class="dropdown-menu dropdown-menu-right bg-dark-tertiary p-3 shadow animated--grow-in"
                                 aria-labelledby="searchDropdown">
 
                                 <!-- Dropdown Google Search -->
@@ -218,7 +219,7 @@
                                     onsubmit="this.submit();document.activeElement.blur();return false;"
                                     autocomplete="off" class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" autocapitalize="off" name="q" class="form-control bg-light border-0 small
+                                        <input type="text" autocapitalize="off" name="q" class="form-control bg-dark-secondary text-body border-0 small
                                             google-search-logo" placeholder="Search Google" aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button type="submit" class="btn btn-primary">
@@ -236,7 +237,7 @@
                                     autocomplete="off" class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
                                         <input type="text" autocapitalize="off" name="wiktionarySearchText"
-                                            class="form-control bg-light border-0 small wiktionary-search-logo"
+                                            class="form-control bg-dark-secondary text-body border-0 small wiktionary-search-logo"
                                             placeholder="Search Wiktionary" aria-label="Search"
                                             aria-describedby="basic-addon2">
                                         <div class="input-group-append">
@@ -322,7 +323,7 @@
                                 <i class="fas fa-angle-double-down fa-fw"></i>
                             </a>
                             <!-- Dropdown - Links -->
-                            <div class="dropdown-menu dropdown-menu-right p-2 shadow animated--grow-in" aria-labelledby="linkDropdown" style="max-width:17rem">
+                            <div class="dropdown-menu dropdown-menu-right bg-dark-tertiary p-2 shadow animated--grow-in" aria-labelledby="linkDropdown" style="max-width:17rem">
                                <form class="form-inline justify-content-center">
                                   <div class="btn-group btn-group-toggle flex-wrap" data-toggle="buttons">
                                      <a class="btn btn-group-dropdown btn-group-dropdown-flex btn-link-icon"
@@ -361,13 +362,13 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Salvēte, χαίρετε!</h1>
+                        <h1 class="h3 mb-0 text-body-emphasis">Salvēte, χαίρετε!</h1>
                     </div>
 
                     <!-- Weather Widget Card -->
                     <div class="row">
                         <div class="col mb-4">
-                            <div class="card border-dark shadow h-100">
+                            <div class="card shadow h-100">
                                 <div class="card-body">
                                   <a class="weatherwidget-io" href="https://forecast7.com/en/30d66n95d54/77340/?unit=us"
                                   data-label_1="HUNTSVILLE, TX" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
@@ -590,10 +591,10 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
+            <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2023-10-12</span>
+                        <span>Last Modified 2023-10-15</span>
                     </div>
                 </div>
             </footer>
@@ -613,7 +614,7 @@
     <!-- Countdown Modal -->
     <div class="modal fade" id="countdownModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-        <div class="modal-content">
+        <div class="modal-content modal-dark">
           <div class="modal-body countdown-modal">
             <div class="container-fluid px-2">
               <div class="row text-center">
