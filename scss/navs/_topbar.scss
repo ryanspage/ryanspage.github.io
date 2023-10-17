@@ -4,11 +4,12 @@
   #sidebarToggleTop {
     height: 2.5rem;
     width: 2.5rem;
-    &:hover {
-      background-color: $gray-200;
+    color: rgba(255,255,255,.8);
+    &:active,&:hover {
+      color: $white;
     }
-    &:active {
-      background-color: $gray-300;
+    &:focus {
+      box-shadow: none;
     }
   }
   .navbar-search {
