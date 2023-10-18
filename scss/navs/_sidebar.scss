@@ -74,12 +74,9 @@
                     border-radius: $border-radius;
                     white-space: nowrap;
 
-                    &:hover {
+                    &:hover, &:active {
                         background-color: $dark-secondary;
-                    }
-
-                    &:active {
-                        background-color: $dark-secondary;
+                        color: $white;
                     }
 
                     &.active {
@@ -176,7 +173,7 @@
         background-color: $dark-secondary;
         .sidebar-card-illustration {
             height: 4.5rem;
-            border: 2px solid $favicon-color;
+            border: 2px solid $gray-500;
             display: block;
         }
         .sidebar-card-title {

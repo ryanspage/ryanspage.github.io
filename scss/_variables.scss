@@ -7,31 +7,31 @@
 $dark-primary: #1a1d20;
 $dark-secondary: #212529;
 $dark-tertiary: #2b3035;
-$favicon-color: #b8b8b8;
 
-$pastel-primary: #6ea8fe;
-$pastel-secondary: #a7acb1;
-$pastel-success: #75b798;
-$pastel-info: #6edff6;
-$pastel-warning: #ffda6a;
-$pastel-danger: #ea868f;
-$pastel-light: #faf9fa;
-$pastel-dark: #dee2e6;
-$pastel-purple: #9461fb;
-$pastel-orange: #feb272;
+// All darkened 10% from original
+$custom-primary: #4a92fe; //#6ea8fe
+$custom-secondary: #959ba1; //#a7acb1
+$custom-success: #61ad89; //#75b798
+$custom-info: #4cd8f4; //#6edff6
+$custom-warning: #ffd146; //#ffda6a
+$custom-danger: #e56772; //#ea868f
+$custom-light: #e3dee3; //#faf9fa
+$custom-dark: #000000; //#dee2e6
+$custom-purple: #a978f8; //#9461fb
+$custom-orange: #fe9e4d; //#feb272
 
 // Custom Theme Colors
 $theme-colors: (
-  "primary-pastel": $pastel-primary,
-  "secondary-pastel": $pastel-secondary,
-  "success-pastel": $pastel-success,
-  "info-pastel": $pastel-info,
-  "warning-pastel": $pastel-warning,
-  "danger-pastel": $pastel-danger,
-  "light-pastel": $pastel-light,
-  "dark-pastel": $pastel-dark,
-  "purple-pastel": $pastel-purple,
-  "orange-pastel": $pastel-orange
+  "primary-custom": $custom-primary,
+  "secondary-custom": $custom-secondary,
+  "success-custom": $custom-success,
+  "info-custom": $custom-info,
+  "warning-custom": $custom-warning,
+  "danger-custom": $custom-danger,
+  "light-custom": $custom-light,
+  "dark-custom": $custom-dark,
+  "purple-custom": $custom-purple,
+  "orange-custom": $custom-orange
 );
 
 /* Original Template Customization */
