@@ -82,13 +82,13 @@ blockquote {
 }
 
 .countdown-text-rome {
-  color: #343534;
+  color: $white;
 }
 
-.bg-gradient-rome {
-    background: #717577;
-    background: -webkit-linear-gradient(to top right, #edc967, #717577, #edc967, #717577);
-    background: linear-gradient(to top right, #edc967, #717577, #edc967, #717577);
+.bg-countdown-rome {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/img/gladiators.jpg');
+    background-size: cover;
 }
 
 .bg-gradient-halloween {
