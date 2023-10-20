@@ -13138,11 +13138,17 @@ blockquote p {
 
 .countdown-text-rome {
   color: #fff;
+  text-shadow: 0 1px 0 #000;
+}
+
+.countdown-text-christmas {
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
 }
 
 .bg-countdown-rome {
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/gladiators.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.275), rgba(0, 0, 0, 0.275)), url("/img/gladiators.jpg");
   background-size: cover;
 }
 
