@@ -12121,6 +12121,15 @@ a:focus {
   animation-delay: 4s;
 }
 
+.snowflake:nth-of-type(13) {
+  left: 80%;
+  animation-delay: 1.5s;
+}
+
+.snowflake:nth-of-type(13) .inner {
+  animation-delay: 6.5s;
+}
+
 .dropdown .dropdown-menu {
   font-size: 0.85rem;
 }
