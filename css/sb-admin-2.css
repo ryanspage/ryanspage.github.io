@@ -13071,6 +13071,11 @@ input:-moz-placeholder {
   color: #95a2af !important;
 }
 
+/* Form Focus Outline */
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(97, 173, 137, 0.25);
+}
+
 /* Icon Style 32x32 */
 .img-icon-32 {
   width: 32px;
