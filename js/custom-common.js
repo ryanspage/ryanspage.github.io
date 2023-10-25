@@ -1,4 +1,6 @@
 (function($) {
+  "use strict"; // Start of use strict
+
   /* Toggle Open & Close of Wiktionary Language Selection Dropdown */
   $("#btn-wiktionary-lang-select").on('click', function (event) {
     $("#dropdown-wiktionary-lang-select").toggleClass('show');
@@ -91,7 +93,8 @@
       + '<div class="holder m-2"><span class="h3 font-weight-bold">%S</span> Sec</div>'));
   });
   /* End Countdown Timers */
-})(jQuery);
+
+})(jQuery); // End of use strict
 
 /* Wiktionary Search */
 function wiktionarySearch(searchBar, searchText) {
