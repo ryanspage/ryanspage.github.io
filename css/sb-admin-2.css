@@ -12140,6 +12140,26 @@ a:focus {
   display: none;
 }
 
+.dropdown-link-item {
+  display: block;
+  padding-left: 1.0rem;
+  padding-right: 1.0rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.35rem;
+  white-space: nowrap;
+}
+
+.dropdown-link-item:hover, .dropdown-link-item:active {
+  background-color: #212529;
+  color: #fff;
+}
+
+.dropdown-link-item.active {
+  color: #fff;
+}
+
 .sidebar .nav-item.dropdown .dropdown-toggle::after,
 .topbar .nav-item.dropdown .dropdown-toggle::after {
   width: 1rem;

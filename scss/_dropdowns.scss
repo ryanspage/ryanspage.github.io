@@ -19,3 +19,25 @@
     display: none;
   }
 }
+
+// Dropdown Link Item
+
+.dropdown-link-item {
+    display: block;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    color: fade-out($white, 0.2);
+    text-align: center;
+    text-decoration: none;
+    border-radius: $border-radius;
+    white-space: nowrap;
+
+    &:hover, &:active {
+        background-color: $dark-secondary;
+        color: $white;
+    }
+
+    &.active {
+        color: $white;
+    }
+}
