@@ -37,7 +37,8 @@
         color: $white;
     }
 
-    &.active {
-        color: $white;
+    &:focus {
+      background-color: transparent;
+      color: fade-out($white, 0.2);
     }
 }

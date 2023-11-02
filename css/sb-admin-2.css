@@ -12156,8 +12156,9 @@ a:focus {
   color: #fff;
 }
 
-.dropdown-link-item.active {
-  color: #fff;
+.dropdown-link-item:focus {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .sidebar .nav-item.dropdown .dropdown-toggle::after,
