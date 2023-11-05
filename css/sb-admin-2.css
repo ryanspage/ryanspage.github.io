@@ -12955,11 +12955,6 @@ blockquote p {
   color: #dee2e6;
 }
 
-/* Image Caption Text */
-.image-caption {
-  font-size: 90%;
-}
-
 /* Dark Modal */
 .modal-dark {
   background-color: #2b3035;
@@ -13037,42 +13032,3 @@ blockquote p {
 }
 
 /* End Countdown Timers */
-/* Carousel Display 1 (xs, sm, md) */
-@media (max-width: 1199.98px) {
-  .carousel-inner .carousel-item.plant-item > div {
-    display: none;
-  }
-  .carousel-inner .carousel-item.plant-item > div:first-child {
-    display: block;
-  }
-}
-
-/* Carousel Display 3 (lg, xl) */
-@media (min-width: 992px) {
-  .carousel-inner .carousel-item.plant-item.active,
-  .carousel-inner .carousel-item-next.plant-item,
-  .carousel-inner .carousel-item-prev.plant-item {
-    display: flex;
-  }
-  .carousel-inner .carousel-item-right.plant-item.active,
-  .carousel-inner .carousel-item-next.plant-item {
-    transform: translateX(33.333%);
-  }
-  .carousel-inner .carousel-item-left.plant-item.active,
-  .carousel-inner .carousel-item-prev.plant-item {
-    transform: translateX(-33.333%);
-  }
-  .carousel-inner .carousel-item-right.plant-item,
-  .carousel-inner .carousel-item-left.plant-item {
-    transform: translateX(0);
-  }
-}
-
-/* Carousel Controls */
-.carousel-control-prev {
-  left: -3%;
-}
-
-.carousel-control-next {
-  right: -3%;
-}
