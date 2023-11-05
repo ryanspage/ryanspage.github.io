@@ -36,6 +36,11 @@ blockquote {
   color: $body-color;
 }
 
+/* Image Caption Text */
+.image-caption {
+  font-size: 90%;
+}
+
 /* Dark Modal */
 .modal-dark {
   background-color: $dark-tertiary;
