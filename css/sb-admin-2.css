@@ -13038,7 +13038,7 @@ blockquote p {
 
 /* End Countdown Timers */
 /* Carousel Display 1 (xs, sm, md) */
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .carousel-inner .carousel-item.plant-item > div {
     display: none;
   }

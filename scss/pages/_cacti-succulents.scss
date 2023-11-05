@@ -1,5 +1,5 @@
 /* Carousel Display 1 (xs, sm, md) */
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
     .carousel-inner .carousel-item.plant-item > div {
         display: none;
     }
