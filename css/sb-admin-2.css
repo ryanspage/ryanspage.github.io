@@ -11642,10 +11642,6 @@ a:focus {
   color: #000;
 }
 
-.text-body {
-  color: #dee2e6;
-}
-
 .text-body-emphasis {
   color: #fff;
 }
@@ -12953,6 +12949,11 @@ blockquote p {
 
 .blockquote-footer {
   color: #dee2e6;
+}
+
+/* Image Caption Text */
+.image-caption {
+  font-size: 90%;
 }
 
 /* Dark Modal */
