@@ -9,7 +9,8 @@
     xl: 1200 // Extra Large
   };
 
-  let startSlide = random(0, 5);
+  // Randomize Slideshow Order
+  shuffle(document.getElementsByClassName('plant-slide'));
 
   // Slideshow Configuration
   $(document).ready(function(){
@@ -20,7 +21,7 @@
       arrows: false,
       draggable: true,
       infinite: true,
-      initialSlide: startSlide,
+      initialSlide: 0,
       mobileFirst: true,
       pauseOnHover: true,
       slidesToShow: 1,
@@ -43,7 +44,27 @@
 
 })(jQuery); // End of use strict
 
-/* Return random integer between min and max (inclusive) */
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+/* Randomizes the order of a set of HTML elements */
+function shuffle(elems) {
+  allElems = (function(){
+	var ret = [], l = elems.length;
+	while (l--) { ret[ret.length] = elems[l]; }
+	return ret;
+    })();
+
+    var shuffled = (function(){
+        var l = allElems.length, ret = [];
+        while (l--) {
+            var random = Math.floor(Math.random() * allElems.length),
+                randEl = allElems[random].cloneNode(true);
+            allElems.splice(random, 1);
+            ret[ret.length] = randEl;
+        }
+        return ret;
+    })(), l = elems.length;
+
+    while (l--) {
+        elems[l].parentNode.insertBefore(shuffled[l], elems[l].nextSibling);
+        elems[l].parentNode.removeChild(elems[l]);
+    }
 }
