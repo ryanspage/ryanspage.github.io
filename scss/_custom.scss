@@ -119,3 +119,21 @@ blockquote {
     background: linear-gradient(to bottom right, #34a65f, #cc231e, #34a65f, #cc231e);
 }
 /* End Countdown Timers */
+
+/* Slick Slideshow */
+.slick-slideshow
+{
+  display: none; // Hide until slick is initialized
+}
+
+.slick-slideshow.slick-initialized
+{
+  display: block; // Display once slick is initialized
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  transition-delay: 10ms; // Fix first slide flicker when looping
+}
+/* End Slick Slideshow */

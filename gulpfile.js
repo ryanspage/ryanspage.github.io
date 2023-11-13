@@ -109,8 +109,8 @@ function css() {
 function js() {
   return gulp
     .src([
-      './js/*.js',
-      '!./js/*.min.js',
+      './js/**/*.js',
+      '!./js/**/*.min.js',
     ])
     .pipe(uglify())
     .pipe(header(banner, {
