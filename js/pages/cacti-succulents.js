@@ -43,12 +43,6 @@
     });
   });
 
-  // Refresh Slideshow at Window Resize or Screen Orientation Change
-  $(window).resize(function(){
-    $('#plant-slideshow')[0].slick.refresh();
-  });
-
-
 })(jQuery); // End of use strict
 
 /* Randomizes the order of a set of HTML elements */
