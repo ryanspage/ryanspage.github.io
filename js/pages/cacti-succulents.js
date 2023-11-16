@@ -12,8 +12,9 @@
   // Randomize Slideshow Order
   shuffle(document.getElementsByClassName('plant-slide'));
 
-  // Slideshow Configuration
   $(document).ready(function(){
+
+    // Slideshow Configuration
     $('#plant-slideshow').slick({
       accessibility: false,
       autoplay: true,
@@ -41,6 +42,16 @@
         }
       ]
     });
+
+    // Resize slideshow at initial load to ensure correct display
+    // (Right margin issue on very large screen sizes)
+    setTimeout(() => {window.dispatchEvent(new Event('resize')); }, 150);
+
+  });
+
+  // Resize slideshow when sidebar toggled to prevent display cutoff
+  $('#sidebarToggle, #sidebarToggleTop').on("click", function() {
+    $('#plant-slideshow').slick('setPosition');
   });
 
 })(jQuery); // End of use strict
