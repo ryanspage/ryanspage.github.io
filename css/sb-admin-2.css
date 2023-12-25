@@ -14748,6 +14748,10 @@ blockquote p {
   font-size: 1.2rem;
 }
 
+.quote-slide blockquote p {
+  font-size: 1.15rem;
+}
+
 .blockquote-footer {
   color: #dee2e6;
 }
@@ -14846,6 +14850,17 @@ blockquote p {
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   transition-delay: 10ms;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-track .slick-slide {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 /* End Slick Slideshow */

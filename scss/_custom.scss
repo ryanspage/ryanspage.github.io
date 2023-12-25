@@ -32,6 +32,14 @@ blockquote {
   }
 }
 
+.quote-slide {
+  blockquote {
+    p {
+      font-size: 1.15rem;
+    }
+  }
+}
+
 .blockquote-footer {
   color: $body-color;
 }
@@ -135,5 +143,15 @@ blockquote {
 .slick-slider .slick-list
 {
   transition-delay: 10ms; // Fix first slide flicker when looping
+}
+
+.slick-track {
+  display: flex; // Vertical center slide content
+}
+.slick-track .slick-slide {
+  display: flex; // Vertical center slide content
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 /* End Slick Slideshow */
