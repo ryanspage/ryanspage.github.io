@@ -18,7 +18,7 @@
     $('#quote-slideshow').slick({
       accessibility: false,
       autoplay: true,
-      autoplaySpeed: 7500,
+      autoplaySpeed: 15000,
       arrows: false,
       draggable: true,
       infinite: true,
