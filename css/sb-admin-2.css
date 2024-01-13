@@ -14715,9 +14715,18 @@ body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
 
-/* Topbar Title (Index Page) */
+/* Site Title & Page Header Visibility (Index Page) */
 @media screen and (max-width: 28rem) {
   #index-topbar-title {
+    display: none;
+  }
+  #index-page-heading {
+    display: none;
+  }
+}
+
+@media not screen and (max-width: 28rem) {
+  #index-page-title {
     display: none;
   }
 }

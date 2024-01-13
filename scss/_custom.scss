@@ -1,8 +1,17 @@
-/* Topbar Title (Index Page) */
-@media screen and (max-width:28rem) { // 448px
-   #index-topbar-title {
+/* Site Title & Page Header Visibility (Index Page) */
+@media screen and (max-width:28rem) {
+   #index-topbar-title { // Hide topbar title <= 448px
       display:none;
    }
+   #index-page-heading { // Hide page heading <= 448px
+     display:none;
+   }
+}
+
+@media not screen and (max-width:28rem) {
+  #index-page-title { // Hide page title > 448px
+    display:none;
+  }
 }
 
 /* Placeholder Text */
