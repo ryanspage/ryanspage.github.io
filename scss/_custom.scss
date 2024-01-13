@@ -1,3 +1,10 @@
+/* Topbar Title (Index Page) */
+@media screen and (max-width:28rem) { // 448px
+   #index-topbar-title {
+      display:none;
+   }
+}
+
 /* Placeholder Text */
 input {
   &::-webkit-input-placeholder { // Chrome/Opera/Safari

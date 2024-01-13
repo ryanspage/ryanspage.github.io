@@ -14715,6 +14715,13 @@ body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
 
+/* Topbar Title (Index Page) */
+@media screen and (max-width: 28rem) {
+  #index-topbar-title {
+    display: none;
+  }
+}
+
 /* Placeholder Text */
 input::-webkit-input-placeholder {
   color: #95a2af !important;
