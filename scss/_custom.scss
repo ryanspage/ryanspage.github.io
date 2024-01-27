@@ -14,6 +14,14 @@
   }
 }
 
+/* Topbar Search Bar Padding (Index Page) */
+@media screen and (min-width: 62rem) and (max-width: 92rem) {
+  // Padding for icon spacing 992px - 1472px
+  #index-topbar-google, #index-topbar-wiktionary {
+    padding-right: 0.5rem
+  }
+}
+
 /* Placeholder Text */
 input {
   &::-webkit-input-placeholder { // Chrome/Opera/Safari

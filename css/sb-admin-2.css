@@ -14731,6 +14731,13 @@ body.sidebar-toggled footer.sticky-footer {
   }
 }
 
+/* Topbar Search Bar Padding (Index Page) */
+@media screen and (min-width: 62rem) and (max-width: 92rem) {
+  #index-topbar-google, #index-topbar-wiktionary {
+    padding-right: 0.5rem;
+  }
+}
+
 /* Placeholder Text */
 input::-webkit-input-placeholder {
   color: #95a2af !important;
