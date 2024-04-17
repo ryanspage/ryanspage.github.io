@@ -280,12 +280,16 @@
                             aria-labelledby="searchDropdown" style="max-width:max-content">
                             <!-- Location Selection -->
                             <form class="form-inline justify-content-center">
-                              <div class="btn-group btn-group-toggle flex-wrap" data-toggle="buttons">
+                              <div class="btn-group-vertical btn-group-toggle flex-wrap" data-toggle="buttons">
                                 <label id="btn-location-huntsville" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown active">
                                 <input type="radio" class="btn-check" name="section" autocomplete="off" checked>
                                 Huntsville, TX
                                 </label>
-                                <label id="btn-location-bloomington" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown">
+                                <label id="btn-location-big-bend" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-2">
+                                <input type="radio" class="btn-check" name="section" autocomplete="off">
+                                Big Bend NP
+                                </label>
+                                <label id="btn-location-bloomington" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-2">
                                 <input type="radio" class="btn-check" name="section" autocomplete="off">
                                 Bloomington, IL
                                 </label>
@@ -402,6 +406,30 @@
                                 <div class="card-body">
                                   <a class="weatherwidget-io" href="https://forecast7.com/en/30d66n95d54/77340/?unit=us"
                                   data-label_1="HUNTSVILLE, TX" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
+                                  data-days="5" data-theme="weather_one"></a>
+                                  <script>
+                                    !function (d,s,id) {
+                                      var js, fjs = d.getElementsByTagName(s)[0];
+                                      if (!d.getElementById(id)) {
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                                        fjs.parentNode.insertBefore(js,fjs);
+                                      }
+                                    } (document,'script','weatherwidget-io-js');
+                                  </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Big Bend Weather Widget Card -->
+                    <div class="row d-none" id="weather-big-bend">
+                        <div class="col mb-4">
+                            <div class="card shadow h-100">
+                                <div class="card-body">
+                                  <a class="weatherwidget-io" href="https://forecast7.com/en/29d25n103d25/big-bend-national-park/?unit=us"
+                                  data-label_1="BIG BEND NP" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
                                   data-days="5" data-theme="weather_one"></a>
                                   <script>
                                     !function (d,s,id) {
@@ -648,7 +676,7 @@
             <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2024-01-26</span>
+                        <span>Last Modified 2024-04-17</span>
                     </div>
                 </div>
             </footer>
