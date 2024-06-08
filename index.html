@@ -595,8 +595,16 @@
                                       href="https://spacecityweather.com/" target="_blank" type="button">SCW</a>
                     			        </div>
                     			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://weather.com/" target="_blank" type="button">Wx CH</a>
+                                    <button class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" data-toggle="dropdown"
+                                     data-display="static" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right bg-dark-tertiary p-2 shadow animated--grow-in">
+                                      <a class="dropdown-item dropdown-link-item" href="https://wunderground.com/dashboard/pws/KTXHUNTS50"
+                                       target="_blank">WU - KTXHUNTS50</a>
+                                      <a class="dropdown-item dropdown-link-item" href="https://weather.com/"
+                                       target="_blank" type="button">Wx Channel</a>
+                                    </div>
                     			        </div>
                     			     </div>
                     		    </div>
@@ -676,7 +684,7 @@
             <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2024-04-17</span>
+                        <span>Last Modified 2024-06-08</span>
                     </div>
                 </div>
             </footer>
