@@ -285,13 +285,17 @@
                                 <input type="radio" class="btn-check" name="section" autocomplete="off" checked>
                                 Huntsville, TX
                                 </label>
+                                <label id="btn-location-bloomington" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
+                                <input type="radio" class="btn-check" name="section" autocomplete="off">
+                                Bloomington, IL
+                                </label>
                                 <label id="btn-location-big-bend" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
                                 <input type="radio" class="btn-check" name="section" autocomplete="off">
                                 Big Bend NP
                                 </label>
-                                <label id="btn-location-bloomington" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
+                                <label id="btn-location-yellowstone" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
                                 <input type="radio" class="btn-check" name="section" autocomplete="off">
-                                Bloomington, IL
+                                Yellowstone NP
                                 </label>
                               </div>
                             </form>
@@ -423,6 +427,30 @@
                         </div>
                     </div>
 
+                    <!-- Bloomington Weather Widget Card -->
+                    <div class="row d-none" id="weather-bloomington">
+                        <div class="col mb-4">
+                            <div class="card shadow h-100">
+                                <div class="card-body">
+                                  <a class="weatherwidget-io" href="https://forecast7.com/en/40d48n88d99/bloomington/?unit=us"
+                                  data-label_1="BLOOMINGTON, IL" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
+                                  data-days="5" data-theme="weather_one"></a>
+                                  <script>
+                                    !function (d,s,id) {
+                                      var js, fjs = d.getElementsByTagName(s)[0];
+                                      if (!d.getElementById(id)) {
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                                        fjs.parentNode.insertBefore(js,fjs);
+                                      }
+                                    } (document,'script','weatherwidget-io-js');
+                                  </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Big Bend Weather Widget Card -->
                     <div class="row d-none" id="weather-big-bend">
                         <div class="col mb-4">
@@ -447,13 +475,13 @@
                         </div>
                     </div>
 
-                    <!-- Bloomington Weather Widget Card -->
-                    <div class="row d-none" id="weather-bloomington">
+                    <!-- Yellowstone Weather Widget Card -->
+                    <div class="row d-none" id="weather-yellowstone">
                         <div class="col mb-4">
                             <div class="card shadow h-100">
                                 <div class="card-body">
-                                  <a class="weatherwidget-io" href="https://forecast7.com/en/40d48n88d99/bloomington/?unit=us"
-                                  data-label_1="BLOOMINGTON, IL" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
+                                  <a class="weatherwidget-io" href="https://forecast7.com/en/44d43n110d59/yellowstone-national-park/?unit=us"
+                                  data-label_1="YELLOWSTONE NP" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
                                   data-days="5" data-theme="weather_one"></a>
                                   <script>
                                     !function (d,s,id) {
@@ -684,7 +712,7 @@
             <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2024-06-08</span>
+                        <span>Last Modified 2024-07-17</span>
                     </div>
                 </div>
             </footer>
