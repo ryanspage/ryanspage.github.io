@@ -14887,3 +14887,7 @@ blockquote p {
 }
 
 /* End Slick Slideshow */
+/* Photography Image Gallery */
+.gallery-image {
+  display: none;
+}
