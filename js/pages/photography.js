@@ -13,19 +13,25 @@
 
     // Display initial gallery images
     $(".gallery-image").slice(0, 6).show();
-    if($(".gallery-image:hidden").length == 0) {
-      $("#viewMore").hide()
-    }
+    showHideViewMore();
 
     // Display next gallery images
-    $("#viewMore").on("click", function(e){
+    $("#btn-view-more").on("click", function(e){
       e.preventDefault();
       $(".gallery-image:hidden").slice(0, 6).slideDown();
-      if($(".gallery-image:hidden").length == 0) {
-        $("#viewMore").hide()
-      }
+      showHideViewMore();
     });
 
   });
 
 })(jQuery); // End of use strict
+
+/* Set 'View More' button visibility */
+function showHideViewMore() {
+  if($(".gallery-image:hidden").length == 0) {
+    $("#row-view-more").hide()
+  }
+  else {
+    $("#row-view-more").show()
+  }
+}
