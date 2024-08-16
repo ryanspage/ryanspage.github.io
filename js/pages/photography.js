@@ -18,7 +18,7 @@
     // Create gallery of images
     for (var i = 0; i < galleryImages.length; i++) {
       $("#gallery").append(
-        '<div class=\"gallery-image col-12 col-sm-6 col-xl-4 mb-4\" style=\"display:none\">' +
+        '<div class=\"gallery-image col-12 col-sm-6 col-lg-4 mb-4\" style=\"display:none\">' +
           '<div class=\"card shadow h-100\">' +
             '<div class=\"card-body p-2\">' +
               '<img src=\"' + galleryPath + galleryImages[i] + '\" class=\"card-img\" loading=\"lazy\">' +
