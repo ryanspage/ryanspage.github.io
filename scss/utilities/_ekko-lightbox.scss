@@ -48,7 +48,7 @@
   align-items: center;
   opacity: 0;
   transition: opacity .5s;
-  color: #fff;
+  color: $white;
   font-size: 30px;
   z-index: 1
 }
@@ -92,6 +92,12 @@
   display: none
 }
 
+.ekko-lightbox .modal-content {
+  background-color: $dark-tertiary;
+  border: 1px solid $border-color;
+  border-radius: 0.35rem;
+}
+
 .ekko-lightbox .modal-footer {
   text-align: left
 }
@@ -124,7 +130,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: $white;
   opacity: .6;
   position: absolute;
   top: 0;
