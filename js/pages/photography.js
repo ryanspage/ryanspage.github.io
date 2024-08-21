@@ -11,8 +11,13 @@
 
   // Gallery file path and images
   const galleryPath = '/img/photography/';
-  const galleryImages = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg',
-                         '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg'];
+  const galleryImages = ['anemone_geyser.jpg', 'beehive_geyser_1.jpg', 'beehive_geyser_2.jpg', 'cascade_canyon_1.jpg', 'cascade_canyon_2.jpg',
+                         'castle_geyser.jpg', 'chipmunk.jpg', 'chocolate_pots.jpg', 'fairy_falls_1.jpg', 'fairy_falls_2.jpg', 'grand_geyser.jpg',
+                         'grand_prismatic_spring.jpg', 'grand_teton.jpg', 'imperial_geyser_1.jpg', 'imperial_geyser_2.jpg', 'jenny_lake.jpg',
+                         'lake_solitude_1.jpg', 'lake_solitude_2.jpg', 'lion_geyser.jpg', 'lone_star_geyser.jpg', 'marmot_1.jpg', 'marmot_2.jpg',
+                         'moose.jpg', 'norris_geyser_basin.jpg', 'old_faithful_1.jpg', 'old_faithful_2.jpg', 'old_faithful_3.jpg',
+                         'old_faithful_4.jpg', 'old_faithful_5.jpg', 'old_faithful_inn.jpg', 'riverside_geyser.jpg', 'steamboat_geyser.jpg',
+                         'white_dome_geyser.jpg', 'yellowstone_falls_1.jpg', 'yellowstone_falls_2.jpg', 'yellowstone_falls_3.jpg'];
 
   $(document).ready(function(){
 
