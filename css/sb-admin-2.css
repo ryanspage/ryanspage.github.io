@@ -13777,6 +13777,10 @@ a:focus {
   width: 100%;
 }
 
+.ekko-lightbox-item img {
+  border-radius: 0.35rem;
+}
+
 .ekko-lightbox iframe {
   width: 100%;
   height: 100%;
@@ -13812,7 +13816,7 @@ a:focus {
 }
 
 .ekko-lightbox-nav-overlay a span {
-  padding: 0 30px;
+  padding: 0 25px;
 }
 
 .ekko-lightbox-nav-overlay a:last-child span {
@@ -13832,9 +13836,11 @@ a:focus {
   visibility: hidden;
 }
 
-.ekko-lightbox a:hover {
-  opacity: 1;
-  text-decoration: none;
+@media screen and (min-width: 1440px) {
+  .ekko-lightbox a:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
 }
 
 .ekko-lightbox .modal-dialog {

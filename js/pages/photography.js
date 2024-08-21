@@ -22,7 +22,7 @@
         '<div class=\"gallery-image col-12 col-sm-6 col-lg-4 mb-4\" style=\"display:none\">' +
           '<div class=\"card shadow h-100\">' +
             '<div class=\"card-body p-2\">' +
-              '<a href=\"' + galleryPath + galleryImages[i] + '\" data-toggle=\"lightbox\" data-gallery=\"gallery\" data-max-width=\"1200\">' +
+              '<a href=\"' + galleryPath + galleryImages[i] + '\" data-toggle=\"lightbox\" data-gallery=\"gallery\" data-max-width=\"900\">' +
                 '<img src=\"' + galleryPath + galleryImages[i] + '\" class=\"card-img\" loading=\"lazy\">' +
               '</a>' +
             '</div>' +

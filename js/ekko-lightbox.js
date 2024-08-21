@@ -617,7 +617,7 @@ var Lightbox = (function ($) {
 				var widthBorderAndPadding = this._padding.left + this._padding.right + this._border.left + this._border.right;
 
 				// force 10px margin if window size > 575px
-				var addMargin = this._config.doc.body.clientWidth > 575 ? 20 : 0;
+				var addMargin = this._config.doc.body.clientWidth > 575 ? 80 : 0;
 				var discountMargin = this._config.doc.body.clientWidth > 575 ? 0 : 20;
 
 				var maxWidth = Math.min(width + widthBorderAndPadding, this._config.doc.body.clientWidth - addMargin, this._config.maxWidth);
