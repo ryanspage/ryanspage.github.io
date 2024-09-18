@@ -184,3 +184,10 @@ blockquote {
 .gallery-image {
   display: none;
 }
+
+/* Video Player Container */
+.video-container {
+  max-width:100%;
+  border-radius:10px;
+  overflow: hidden;
+}
