@@ -573,8 +573,8 @@
                                  target="_blank">National Park</a>
                                 <a class="dropdown-item dropdown-link-item" href="https://nps.gov/yell/learn/photosmultimedia/webcams.htm"
                                  target="_blank">NPS Webcams</a>
-                                <a class="dropdown-item dropdown-link-item" href="https://yellowstone.org/old-faithful-streaming-webcam/"
-                                 target="_blank">Old Faithful Live</a>
+                                <a class="dropdown-item dropdown-link-item" href="#" data-toggle="modal"
+                                 data-target="#oldFaithfulModal">Old Faithful Live <i class="fas fa-video fa-fw"></i></a>
                                 <a class="dropdown-item dropdown-link-item" href="https://yellowstonenationalparklodges.com/"
                                  target="_blank">Yellowstone Lodges</a>
                               </div>
@@ -660,7 +660,7 @@
             <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2024-08-10</span>
+                        <span>Last Modified 2024-09-18</span>
                     </div>
                 </div>
             </footer>
@@ -676,6 +676,21 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
+
+    <!-- Old Faithful Video Modal -->
+    <div class="modal fade" id="oldFaithfulModal" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content modal-dark">
+          <div class="modal-body">
+            <div class="video-container">
+              <video class="img-rounded" id="oldFaithfulVideo" controls crossorigin playsinline
+                poster="https://cdn.pixelcaster.com/public.pixelcaster.com/snapshots/yellowstone-old-faithful/latest.jpg">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Countdown Modal -->
     <div class="modal fade" id="countdownModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -766,6 +781,11 @@
     <script src="/js/sb-admin-2.min.js"></script>
     <script src="/js/jquery.countdown.min.js"></script>
     <script src="/js/custom-common.min.js"></script>
+
+    <!-- Custom scripts for this page-->
+    <script src="/js/hls.min.js"></script>
+    <script src="/js/plyr.min.js"></script>
+    <script src="/js/pages/other-links.min.js"></script>
 
 </body>
 
