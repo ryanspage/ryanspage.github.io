@@ -16549,7 +16549,7 @@ blockquote p {
 /* Video Container */
 .video-container {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 0.35rem;
   overflow: hidden;
 }
 

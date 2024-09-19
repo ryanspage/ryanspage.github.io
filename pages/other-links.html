@@ -513,8 +513,8 @@
                                 <a class="dropdown-item dropdown-link-item" href="https://bigbendweather.com/" target="_blank">Big Bend Weather</a>
                                 <a class="dropdown-item dropdown-link-item" href="https://chisosmountainslodge.com/" target="_blank">Chisos Lodge</a>
                                 <a class="dropdown-item dropdown-link-item" href="https://nps.gov/bibe/index.htm" target="_blank">National Park</a>
-                                <a class="dropdown-item dropdown-link-item" href="https://www.nps.gov/media/webcam/view.htm?id=EE11A8B1-EE17-7C0C-8C0AF4FE6CF5CD48"
-                                 target="_blank">Panther Junction Webcam</a>
+                                <a class="dropdown-item dropdown-link-item" href="#" data-toggle="modal"
+                                 data-target="#pantherJunctionModal">Panther Junction Live <i class="fas fa-video fa-fw"></i></a>
                               </div>
                             </div>
                             <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
@@ -660,7 +660,7 @@
             <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2024-09-18</span>
+                        <span>Last Modified 2024-09-19</span>
                     </div>
                 </div>
             </footer>
@@ -676,6 +676,19 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
+
+    <!-- Big Bend - Panther Junction Webcam Modal -->
+    <div class="modal fade" id="pantherJunctionModal" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content modal-dark">
+          <div class="modal-body">
+            <a href="https://www.nps.gov/media/webcam/view.htm?id=EE11A8B1-EE17-7C0C-8C0AF4FE6CF5CD48" target="_blank">
+              <img src="https://www.nps.gov/featurecontent/ard/webcams/images/bibelarge.jpg" class="card-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Old Faithful Video Modal -->
     <div class="modal fade" id="oldFaithfulModal" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true">
