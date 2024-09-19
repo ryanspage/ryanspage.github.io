@@ -185,6 +185,13 @@ blockquote {
   display: none;
 }
 
+/* Video & Webcam Modal */
+@media screen and (min-width: map-get($grid-breakpoints, xl)) {
+  .modal-webcam {
+    max-width: 1080px // Default modal-xl is 1140px
+  }
+}
+
 /* Video Container */
 .video-container {
   max-width: 100%;

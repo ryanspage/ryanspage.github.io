@@ -16546,6 +16546,13 @@ blockquote p {
   display: none;
 }
 
+/* Video & Webcam Modal */
+@media screen and (min-width: 1200px) {
+  .modal-webcam {
+    max-width: 1080px;
+  }
+}
+
 /* Video Container */
 .video-container {
   max-width: 100%;
