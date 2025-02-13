@@ -11,7 +11,7 @@
 
   // Start Old Faithful live-stream webcam when modal opened
   $("#oldFaithfulModal").on('show.bs.modal', function (event) {
-    const source = 'https://cs8.pixelcaster.com/nps/faithful.stream/chunks.m3u8';
+    const source = 'https://cs7.pixelcaster.com/nps/faithful.stream/chunks.m3u8';
     const video = document.querySelector('#oldFaithfulVideo');
 
     const player = new Plyr(video, {
