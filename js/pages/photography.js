@@ -22,7 +22,7 @@
 
   if (galleryNum == 1) {
     $("#galleryTitle").text("Yellowstone & Grand Teton 2024");
-    galleryPath = '/img/photography/gallery1/';
+    galleryPath = '/img/photography/gallery-1/';
     galleryImages = ['anemone_geyser.jpg', 'beehive_geyser_1.jpg', 'beehive_geyser_2.jpg', 'cascade_canyon_1.jpg', 'cascade_canyon_2.jpg',
                      'castle_geyser.jpg', 'chipmunk.jpg', 'chocolate_pots.jpg', 'fairy_falls_1.jpg', 'fairy_falls_2.jpg', 'grand_geyser.jpg',
                      'grand_prismatic_spring.jpg', 'grand_teton.jpg', 'imperial_geyser_1.jpg', 'imperial_geyser_2.jpg', 'jenny_lake.jpg',
@@ -33,7 +33,7 @@
   }
   else if (galleryNum == 2) {
     $("#galleryTitle").text("Mount Rainier & Olympic 2025");
-    galleryPath = '/img/photography/gallery2/';
+    galleryPath = '/img/photography/gallery-2/';
     galleryImages = ['lake_crescent.jpg', 'marymere_falls.jpg', 'mount_rainier_burroughs_1.jpg', 'mount_rainier_burroughs_2.jpg',
                      'mount_rainier_burroughs_3.jpg', 'mount_rainier_paradise.jpg', 'myrtle_falls.jpg', 'olympic_deer_1.jpg',
                      'olympic_deer_2.jpg', 'olympic_forest_1.jpg', 'olympic_forest_2.jpg', 'olympic_forest_3.jpg', 'olympic_marmot_1.jpg',
