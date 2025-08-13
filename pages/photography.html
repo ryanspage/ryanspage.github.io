@@ -64,12 +64,12 @@
 
             <!-- Nav Item - Ancient World Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
                     <i class="fas fa-fw fa-university"></i>
                     <span>Ancient World</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                     <div class="bg-dark-tertiary py-2 collapse-inner rounded">
                         <a class="collapse-item" href="/pages/roman-history.html">Roman History</a>
                         <a class="collapse-item" href="/pages/latin-greek.html">Latin + Ἑλληνική</a>
@@ -85,10 +85,18 @@
             </li>
 
             <!-- Nav Item - Photography Page -->
-            <li class="nav-item active">
-                <a class="nav-link" href="/pages/photography.html">
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-camera"></i>
-                    <span>Photography</span></a>
+                    <span>Photography</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-dark-tertiary py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="/pages/photography.html?gallery=1">Yellowstone 2024</a>
+                        <a class="collapse-item" href="/pages/photography.html?gallery=2">Mount Rainier 2025</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Astronomy Page -->
@@ -369,7 +377,7 @@
 
                   <!-- Gallery Heading  -->
                   <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h4 mb-0 text-body-emphasis">Yellowstone & Grand Teton 2024</h1>
+                    <h1 id="galleryTitle" class="h4 mb-0 text-body-emphasis"></h1>
                   </div>
 
                   <!-- Image Gallery -->
@@ -392,7 +400,7 @@
             <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2024-08-21</span>
+                        <span>Last Modified 2025-08-13</span>
                     </div>
                 </div>
             </footer>

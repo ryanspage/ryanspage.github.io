@@ -9,15 +9,33 @@
     xl: 1200 // Extra Large
   };
 
+  // Get the URL gallery parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const galleryNum = urlParams.get('gallery');
+
+  // Get the gallery title element
+  const galleryTitle = document.getElementById("galleryTitle");
+
   // Gallery file path and images
-  const galleryPath = '/img/photography/';
-  const galleryImages = ['anemone_geyser.jpg', 'beehive_geyser_1.jpg', 'beehive_geyser_2.jpg', 'cascade_canyon_1.jpg', 'cascade_canyon_2.jpg',
-                         'castle_geyser.jpg', 'chipmunk.jpg', 'chocolate_pots.jpg', 'fairy_falls_1.jpg', 'fairy_falls_2.jpg', 'grand_geyser.jpg',
-                         'grand_prismatic_spring.jpg', 'grand_teton.jpg', 'imperial_geyser_1.jpg', 'imperial_geyser_2.jpg', 'jenny_lake.jpg',
-                         'lake_solitude_1.jpg', 'lake_solitude_2.jpg', 'lion_geyser.jpg', 'lone_star_geyser.jpg', 'marmot_1.jpg', 'marmot_2.jpg',
-                         'moose.jpg', 'norris_geyser_basin.jpg', 'old_faithful_1.jpg', 'old_faithful_2.jpg', 'old_faithful_3.jpg',
-                         'old_faithful_4.jpg', 'old_faithful_5.jpg', 'old_faithful_inn.jpg', 'riverside_geyser.jpg', 'steamboat_geyser.jpg',
-                         'white_dome_geyser.jpg', 'yellowstone_falls_1.jpg', 'yellowstone_falls_2.jpg', 'yellowstone_falls_3.jpg'];
+  let galleryPath = ''
+  let galleryImages = []
+
+  if (galleryNum == 1) {
+    galleryTitle.textContent = "Yellowstone & Grand Teton 2024";
+    galleryPath = '/img/photography/gallery1/';
+    galleryImages = ['anemone_geyser.jpg', 'beehive_geyser_1.jpg', 'beehive_geyser_2.jpg', 'cascade_canyon_1.jpg', 'cascade_canyon_2.jpg',
+                     'castle_geyser.jpg', 'chipmunk.jpg', 'chocolate_pots.jpg', 'fairy_falls_1.jpg', 'fairy_falls_2.jpg', 'grand_geyser.jpg',
+                     'grand_prismatic_spring.jpg', 'grand_teton.jpg', 'imperial_geyser_1.jpg', 'imperial_geyser_2.jpg', 'jenny_lake.jpg',
+                     'lake_solitude_1.jpg', 'lake_solitude_2.jpg', 'lion_geyser.jpg', 'lone_star_geyser.jpg', 'marmot_1.jpg', 'marmot_2.jpg',
+                     'moose.jpg', 'norris_geyser_basin.jpg', 'old_faithful_1.jpg', 'old_faithful_2.jpg', 'old_faithful_3.jpg',
+                     'old_faithful_4.jpg', 'old_faithful_5.jpg', 'old_faithful_inn.jpg', 'riverside_geyser.jpg', 'steamboat_geyser.jpg',
+                     'white_dome_geyser.jpg', 'yellowstone_falls_1.jpg', 'yellowstone_falls_2.jpg', 'yellowstone_falls_3.jpg'];
+  }
+  else if (galleryNum == 2) {
+    galleryTitle.textContent = "Mount Rainier & Olympic 2025";
+    galleryPath = '/img/photography/gallery2/';
+    galleryImages = []
+  }
 
   $(document).ready(function(){
 
