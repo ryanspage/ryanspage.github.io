@@ -34,7 +34,12 @@
   else if (galleryNum == 2) {
     galleryTitle.textContent = "Mount Rainier & Olympic 2025";
     galleryPath = '/img/photography/gallery2/';
-    galleryImages = []
+    galleryImages = ['lake_crescent.jpg', 'marymere_falls.jpg', 'mount_rainier_burroughs_1.jpg', 'mount_rainier_burroughs_2.jpg',
+                     'mount_rainier_burroughs_3.jpg', 'mount_rainier_paradise.jpg', 'myrtle_falls.jpg', 'olympic_deer_1.jpg',
+                     'olympic_deer_2.jpg', 'olympic_forest_1.jpg', 'olympic_forest_2.jpg', 'olympic_forest_3.jpg', 'olympic_marmot_1.jpg',
+                     'olympic_marmot_2.jpg', 'olympic_wildflowers_1.jpg', 'olympic_wildflowers_2.jpg', 'olympic_wildflowers_3.jpg',
+                     'paradise_inn.jpg', 'paradise_valley.jpg', 'rainier_marmot.jpg', 'seattle_queen_anne.jpg', 'space_needle.jpg',
+                     'tatoosh_range.jpg', 'winthrop_glacier.jpg']
   }
 
   $(document).ready(function(){
