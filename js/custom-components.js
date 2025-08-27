@@ -13,6 +13,8 @@
       .not($parent)
       .removeClass('open');
 
+    adjustSubmenuAlignment($parent);
+
     $parent.toggleClass('open');
   });
 
@@ -21,10 +23,11 @@
     $('.dropdown-submenu').removeClass('open');
   });
 
-  // Toggle dropdown submenu on hover when window is larger than 992px
+  // Toggle dropdown submenu on hover when window is larger than 1200px
   $('.dropdown-submenu').hover(
     function () {
       if (window.innerWidth >= 1200) {
+        adjustSubmenuAlignment($(this));
         $(this).addClass('open');
       }
     },
@@ -34,5 +37,37 @@
       }
     }
   );
+
+  // Dynamically set dropdown submenu alignment (left or right)
+  function adjustSubmenuAlignment($submenu) {
+    const $dropdownMenu = $submenu.children('.dropdown-menu');
+
+    $submenu.removeClass('dropdown-submenu-left dropdown-submenu-right');
+    $submenu.addClass('dropdown-submenu-right');
+
+    $dropdownMenu.css({ visibility: 'hidden', display: 'block' });
+
+    const menuOffset = $dropdownMenu.offset();
+    const menuWidth = $dropdownMenu.outerWidth();
+    const windowWidth = $(window).width();
+
+    const $sidebar = $('#accordionSidebar');
+    const sidebarWidth = $sidebar.is(':visible') ? $sidebar.outerWidth() : 0;
+
+    const availableLeft = sidebarWidth;
+    const availableRight = windowWidth;
+
+    if (menuOffset.left + menuWidth > availableRight) {
+      $submenu.removeClass('dropdown-submenu-right').addClass('dropdown-submenu-left');
+
+      $dropdownMenu.css({ visibility: 'hidden', display: 'block' });
+      const newOffset = $dropdownMenu.offset();
+      if (newOffset.left < availableLeft) {
+        $submenu.removeClass('dropdown-submenu-left').addClass('dropdown-submenu-right');
+      }
+    }
+
+    $dropdownMenu.css({ visibility: '', display: '' });
+  }
 
 })(jQuery); // End of use strict

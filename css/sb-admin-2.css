@@ -15608,7 +15608,7 @@ a.plyr__control::before {
   color: #fff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .dropdown-submenu > .dropdown-menu {
     position: static;
     left: 0;

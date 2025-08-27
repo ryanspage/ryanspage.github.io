@@ -47,7 +47,7 @@
     color: $white;
   }
 
-  @media (max-width: map-get($grid-breakpoints, lg)) {
+  @media (max-width: map-get($grid-breakpoints, sm)) {
     > .dropdown-menu {
       position: static;
       left: 0;
