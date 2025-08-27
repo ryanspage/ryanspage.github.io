@@ -38,6 +38,12 @@
     }
   );
 
+  // Realign open dropdown submenu when window is resized
+  $(window).resize(function () {
+    const openSubmenus = $('.dropdown-submenu.open');
+    adjustSubmenuAlignment(openSubmenus);
+  });
+
   // Dynamically set dropdown submenu alignment (left or right)
   function adjustSubmenuAlignment($submenu) {
     const $dropdownMenu = $submenu.children('.dropdown-menu');
