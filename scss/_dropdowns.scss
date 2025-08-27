@@ -12,11 +12,49 @@
   }
 }
 
-// Utility class to hide arrow from dropdown
+// Dropdown Submenu
 
-.dropdown.no-arrow {
-  .dropdown-toggle::after {
+.dropdown-submenu {
+  position: relative;
+
+  > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
     display: none;
+  }
+
+  &.dropdown-submenu-right {
+    > .dropdown-menu {
+      left: 100%;
+      right: auto;
+    }
+  }
+
+  &.dropdown-submenu-left {
+    > .dropdown-menu {
+      left: auto;
+      right: 100%;
+    }
+  }
+
+  &.open > .dropdown-menu {
+    display: block;
+  }
+
+  &.open > .dropdown-toggle {
+    background-color: $dark-secondary;
+    color: $white;
+  }
+
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    > .dropdown-menu {
+      position: static;
+      left: 0;
+      right: auto;
+      margin-left: 0;
+      display: none;
+    }
   }
 }
 
@@ -41,4 +79,12 @@
       background-color: transparent;
       color: fade-out($white, 0.2);
     }
+}
+
+// Utility class to hide arrow from dropdown
+
+.dropdown.no-arrow {
+  .dropdown-toggle::after {
+    display: none;
+  }
 }
