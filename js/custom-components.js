@@ -24,12 +24,12 @@
   // Toggle dropdown submenu on hover when window is larger than 992px
   $('.dropdown-submenu').hover(
     function () {
-      if (window.innerWidth >= 992) {
+      if (window.innerWidth >= 1200) {
         $(this).addClass('open');
       }
     },
     function () {
-      if (window.innerWidth >= 992) {
+      if (window.innerWidth >= 1200) {
         $(this).removeClass('open');
       }
     }
