@@ -48,7 +48,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Home -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="/index.html">
                     <i class="fas fa-fw fa-star"></i>
                     <span>Home</span></a>
@@ -122,7 +122,7 @@
             </li>
 
             <!-- Nav Item - Travel Page -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="/pages/travel-links.html">
                     <i class="fas fa-fw fa-plane"></i>
                     <span>Travel</span></a>
@@ -165,14 +165,14 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- Topbar Site Title (Only XS, S) (Hidden <= 448px) -->
-                    <h1 class="h5 mb-0 text-success-custom d-md-none" id="index-topbar-title">RYAN'S PAGE</h1>
+                    <!-- Topbar Site Title (Only XS, S) -->
+                    <h1 class="h5 mb-0 text-success-custom d-md-none">RYAN'S PAGE</h1>
 
                     <!-- Topbar Google Search -->
                     <form method="get" action="https://www.google.com/search" target="_blank"
                         onsubmit="this.submit();document.activeElement.blur();return false;" autocomplete="off"
                         class="d-none d-lg-inline-block form-inline ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group" id="index-topbar-google">
+                        <div class="input-group">
                             <input type="text" autocapitalize="off" name="q" class="input form-control bg-dark-secondary text-body
                               border-0 small google-search-logo" placeholder="Search Google"
                               aria-label="Search" aria-describedby="basic-addon2">
@@ -187,7 +187,7 @@
                     <!-- Topbar Wiktionary Search -->
                     <form onsubmit="wiktionarySearch(0,this.wiktionarySearchText.value);document.activeElement.blur();return false;" autocomplete="off"
                         class="d-none d-lg-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group" id="index-topbar-wiktionary">
+                        <div class="input-group">
                             <input type="text" autocapitalize="off" name="wiktionarySearchText"
                                 class="form-control bg-dark-secondary text-body border-0 small wiktionary-search-logo" placeholder="Search Wiktionary"
                                 aria-label="Search" aria-describedby="basic-addon2">
@@ -291,39 +291,6 @@
                             </div>
                         </li>
 
-                        <!-- Nav Item - Weather Location Dropdown -->
-                        <li class="nav-item dropdown no-arrow">
-                          <a class="nav-link dropdown-toggle" id="locationDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="far fa-star fa-fw"></i>
-                          </a>
-                          <!-- Dropdown - Weather Location -->
-                          <div class="dropdown-menu dropdown-menu-right bg-dark-tertiary p-2 shadow animated--grow-in"
-                            aria-labelledby="searchDropdown" style="max-width:max-content">
-                            <!-- Location Selection -->
-                            <form class="form-inline justify-content-center">
-                              <div class="btn-group-vertical btn-group-toggle flex-wrap" data-toggle="buttons">
-                                <label id="btn-location-huntsville" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown active">
-                                <input type="radio" class="btn-check" name="section" autocomplete="off" checked>
-                                Huntsville, TX
-                                </label>
-                                <label id="btn-location-bloomington" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
-                                <input type="radio" class="btn-check" name="section" autocomplete="off">
-                                Bloomington, IL
-                                </label>
-                                <label id="btn-location-big-bend" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
-                                <input type="radio" class="btn-check" name="section" autocomplete="off">
-                                Big Bend NP
-                                </label>
-                                <label id="btn-location-yellowstone" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
-                                <input type="radio" class="btn-check" name="section" autocomplete="off">
-                                Yellowstone NP
-                                </label>
-                              </div>
-                            </form>
-                          </div>
-                        </li>
-
                         <!-- Countdown Modal Icon -->
                         <li class="nav-item">
                             <a class="nav-link" role="button" data-toggle="modal" data-target="#countdownModal">
@@ -415,314 +382,93 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Site Title (Visible <= 448px) -->
-                    <div class="d-sm-none align-items-center justify-content-between mb-4" id="index-page-title">
-                      <h1 class="h4 mb-0 text-success-custom">RYAN'S PAGE</h1>
-                    </div>
+                  <!-- General Travel Link Card -->
+                  <div class="row">
 
-                    <!-- Page Heading (Hidden <= 448px) -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4" id="index-page-heading">
-                      <h1 class="h3 mb-0 text-body-emphasis">Salvēte, χαίρετε!</h1>
-                    </div>
-
-                    <!-- Huntsville Weather Widget Card -->
-                    <div class="row" id="weather-huntsville">
-                        <div class="col mb-4">
-                            <div class="card shadow h-100">
-                                <div class="card-body">
-                                  <a class="weatherwidget-io" href="https://forecast7.com/en/30d66n95d54/77340/?unit=us"
-                                  data-label_1="HUNTSVILLE, TX" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
-                                  data-days="5" data-theme="weather_one"></a>
-                                  <script>
-                                    !function (d,s,id) {
-                                      var js, fjs = d.getElementsByTagName(s)[0];
-                                      if (!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = 'https://weatherwidget.io/js/widget.min.js';
-                                        fjs.parentNode.insertBefore(js,fjs);
-                                      }
-                                    } (document,'script','weatherwidget-io-js');
-                                  </script>
-                                </div>
+                    <div class="col-12 mb-4">
+                      <div class="card border-top-success-custom text-center shadow h-100 pt-2">
+                        <div class="card-header">General Travel</div>
+                        <div class="card-body p-2">
+                          <div class="row justify-center no-gutters">
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-success-custom btn-outline-dark-text btn-sm btn-block" href="https://google.com/maps"
+                               target="_blank" type="button">Google Maps</a>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Bloomington Weather Widget Card -->
-                    <div class="row d-none" id="weather-bloomington">
-                        <div class="col mb-4">
-                            <div class="card shadow h-100">
-                                <div class="card-body">
-                                  <a class="weatherwidget-io" href="https://forecast7.com/en/40d48n88d99/bloomington/?unit=us"
-                                  data-label_1="BLOOMINGTON, IL" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
-                                  data-days="5" data-theme="weather_one"></a>
-                                  <script>
-                                    !function (d,s,id) {
-                                      var js, fjs = d.getElementsByTagName(s)[0];
-                                      if (!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = 'https://weatherwidget.io/js/widget.min.js';
-                                        fjs.parentNode.insertBefore(js,fjs);
-                                      }
-                                    } (document,'script','weatherwidget-io-js');
-                                  </script>
-                                </div>
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-success-custom btn-outline-dark-text btn-sm btn-block" href="https://wanderlog.com/"
+                               target="_blank" type="button">Wanderlog</a>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Big Bend Weather Widget Card -->
-                    <div class="row d-none" id="weather-big-bend">
-                        <div class="col mb-4">
-                            <div class="card shadow h-100">
-                                <div class="card-body">
-                                  <a class="weatherwidget-io" href="https://forecast7.com/en/29d25n103d25/big-bend-national-park/?unit=us"
-                                  data-label_1="BIG BEND NP" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
-                                  data-days="5" data-theme="weather_one"></a>
-                                  <script>
-                                    !function (d,s,id) {
-                                      var js, fjs = d.getElementsByTagName(s)[0];
-                                      if (!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = 'https://weatherwidget.io/js/widget.min.js';
-                                        fjs.parentNode.insertBefore(js,fjs);
-                                      }
-                                    } (document,'script','weatherwidget-io-js');
-                                  </script>
-                                </div>
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-success-custom btn-outline-dark-text btn-sm btn-block" href="https://booking.com/"
+                               target="_blank" type="button">Booking.com</a>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Yellowstone Weather Widget Card -->
-                    <div class="row d-none" id="weather-yellowstone">
-                        <div class="col mb-4">
-                            <div class="card shadow h-100">
-                                <div class="card-body">
-                                  <a class="weatherwidget-io" href="https://forecast7.com/en/44d43n110d59/yellowstone-national-park/?unit=us"
-                                  data-label_1="YELLOWSTONE NP" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
-                                  data-days="5" data-theme="weather_one"></a>
-                                  <script>
-                                    !function (d,s,id) {
-                                      var js, fjs = d.getElementsByTagName(s)[0];
-                                      if (!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = 'https://weatherwidget.io/js/widget.min.js';
-                                        fjs.parentNode.insertBefore(js,fjs);
-                                      }
-                                    } (document,'script','weatherwidget-io-js');
-                                  </script>
-                                </div>
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-success-custom btn-outline-dark-text btn-sm btn-block" href="https://skyscanner.com/"
+                               target="_blank" type="button">Skyscanner</a>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Home Link Cards -->
-                    <div class="row">
-
-                    	<!-- News & Politics Link Card -->
-                    	<div class="col-12 col-lg-6 mb-4">
-                    	   <div class="card border-top-danger-custom text-center shadow h-100 pt-2">
-                    		    <div class="card-header">News &amp; Politics</div>
-                    		    <div class="card-body d-flex p-2">
-                    			     <div class="row m-auto justify-content-center no-gutters">
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://apnews.com/" target="_blank" type="button">AP</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://arstechnica.com/" target="_blank" type="button">Ars Tech</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://axios.com/" target="_blank" type="button">Axios</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://bbc.com/" target="_blank" type="button">BBC</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://cnn.com/" target="_blank" type="button">CNN</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://theguardian.com/us" target="_blank" type="button">Guardian</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://thehill.com/" target="_blank" type="button">The Hill</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://npr.org/" target="_blank" type="button">NPR</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://politico.com/" target="_blank" type="button">Politico</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://slate.com/" target="_blank" type="button">Slate</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://usatoday.com/" target="_blank" type="button">USA Today</a>
-                    			        </div>
-                    			        <div class="col-6 col-xl-3 my-1 px-1">
-                    				         <a class="btn btn-outline-danger-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://vox.com/" target="_blank" type="button">Vox</a>
-                    			        </div>
-                    			     </div>
-                    		    </div>
-                    	   </div>
-                    	</div>
-
-                      <!-- Sports Link Card -->
-                      <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                    	   <div class="card border-top-warning-custom text-center shadow h-100 pt-2">
-                    		    <div class="card-header">Sports</div>
-                    		    <div class="card-body d-flex p-2">
-                    			     <div class="row m-auto justify-content-center no-gutters">
-                    			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-warning-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://espn.com/" target="_blank" type="button">ESPN</a>
-                    			        </div>
-                          			  <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                          				   <a class="btn btn-outline-warning-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://masters.com/index.html" target="_blank" type="button">Masters</a>
-                          			  </div>
-                    			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-warning-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://nbcsports.com/" target="_blank" type="button">NBC</a>
-                    			        </div>
-                    				      <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-warning-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://pgatour.com/" target="_blank" type="button">PGA Tour</a>
-                    			        </div>
-                    			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-warning-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://sbnation.com/" target="_blank" type="button">SB Nation</a>
-                    			        </div>
-                    			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-warning-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://si.com/" target="_blank" type="button">Sports IL</a>
-                    			        </div>
-                    			     </div>
-                    		    </div>
-                    	   </div>
-                      </div>
-
-                      <!-- Weather Link Card -->
-                      <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                    	   <div class="card border-top-info-custom text-center shadow h-100 pt-2">
-                    		    <div class="card-header">Weather</div>
-                    		    <div class="card-body d-flex p-2">
-                    			     <div class="row m-auto justify-content-center no-gutters">
-                    			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://accuweather.com/" target="_blank" type="button">AccuWx</a>
-                    			        </div>
-                    			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://nps.gov/bibe/planyourvisit/weather.htm" target="_blank" type="button">Big Bend</a>
-                    			        </div>
-                    			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://kbtx.com/weather/" target="_blank" type="button">KBTX</a>
-                    			        </div>
-                    			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://weather.gov/" target="_blank" type="button">NWS</a>
-                    			        </div>
-                    			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                    				         <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block"
-                                      href="https://spacecityweather.com/" target="_blank" type="button">SCW</a>
-                    			        </div>
-                    			        <div class="col-6 col-sm-12 col-xl-6 my-1 px-1">
-                                    <button class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" data-toggle="dropdown"
-                                     data-display="static" aria-haspopup="true" aria-expanded="false">
-                                     <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-right bg-dark-tertiary p-2 shadow animated--grow-in">
-                                      <a class="dropdown-item dropdown-link-item" href="https://wunderground.com/dashboard/pws/KTXHUNTS50"
-                                       target="_blank">WU - KTXHUNTS50</a>
-                                      <a class="dropdown-item dropdown-link-item" href="https://weather.com/"
-                                       target="_blank" type="button">Wx Channel</a>
-                                    </div>
-                    			        </div>
-                    			     </div>
-                    		    </div>
-                    	   </div>
-                      </div>
-
-                    </div>
-
-                    <!-- Quote Cards -->
-                    <div class="row">
-
-                       <div class="col-12 col-lg-6">
-
-                          <div class="row h-100">
-
-                    	       <!-- War and Peace Quote -->
-                             <div class="col-12 mb-4">
-                                <div class="card border-left-purple-custom shadow h-100 pt-2">
-                                   <div class="card-header" style="font-style:italic">War and Peace</div>
-                                   <div class="card-body d-flex">
-                                      <blockquote class="blockquote m-auto">
-                                         <p>Yes! It's all vanity, it's all an illusion, everything except that infinite sky.
-                                            There is nothing, nothing - that's all there is. But there isn't even that.
-                                            There's nothing but stillness and peace.</p>
-                                         <footer class="blockquote-footer">Leo Tolstoy</footer>
-                                      </blockquote>
-                                   </div>
-                                </div>
-                             </div>
-
-                    	       <!-- Malazan Quote -->
-                             <div class="col-12 mb-4">
-                                <div class="card border-left-purple-custom shadow h-100 pt-2">
-                                   <div class="card-header" style="font-style:italic">The Malazan Book of the Fallen</div>
-                                   <div class="card-body d-flex">
-                                      <blockquote class="blockquote m-auto">
-                                         <p>There is no struggle too vast, no odds too overwhelming, for even should we fail -
-                                            should we fall - we will know that we have lived.</p>
-                                         <footer class="blockquote-footer">Steven Erikson</footer>
-                                      </blockquote>
-                                   </div>
-                                </div>
-                             </div>
-
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-success-custom btn-outline-dark-text btn-sm btn-block" href="https://flightaware.com/"
+                               target="_blank" type="button">FlightAware</a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-success-custom btn-outline-dark-text btn-sm btn-block" href="https://flightstats.com/v2/"
+                               target="_blank" type="button">FlightStats</a>
+                            </div>
                           </div>
-
-                       </div>
-
-                       <!-- Sallust Quote -->
-                       <div class="col-12 col-lg-6 mb-4">
-                          <div class="card border-left-purple-custom shadow h-100 pt-2">
-                             <div class="card-header" style="font-style:italic">Bellum Catilinae</div>
-                             <div class="card-body d-flex">
-                                <blockquote class="blockquote m-auto">
-                                   <p>Omnis homines, qui sese student praestare ceteris animalibus, summa ope niti decet,
-                                      ne vitam silentio transeant veluti pecora, quae natura prona atque ventri oboedientia finxit.
-                                      Sed nostra omnis vis in animo et corpore sita est: animi imperio,
-                                      corporis servitio magis utimur; alterum nobis cum dis, alterum cum beluis commune est.
-                                      Quo mihi rectius videtur ingeni quam virium opibus gloriam quaerere et, quoniam vita ipsa,
-                                      qua fruimur, brevis est, memoriam nostri quam maxume longam efficere.
-                                      Nam divitiarum et formae gloria fluxa atque fragilis est, virtus clara aeternaque habetur.</p>
-                                   <footer class="blockquote-footer">Gaius Sallustius Crispus</footer>
-                                </blockquote>
-                             </div>
-                          </div>
-                       </div>
-
+                        </div>
+                      </div>
                     </div>
+
+                  </div>
+
+                  <!-- Upcoming Trip Link Card -->
+                  <div class="row">
+
+                    <div class="col-12 mb-4">
+                      <div class="card border-top-info-custom text-center shadow h-100 pt-2">
+                        <div class="card-header">Iceland - Summer 2026</div>
+                        <div class="card-body p-2">
+                          <div class="row justify-center no-gutters">
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://en.vedur.is/"
+                               target="_blank" type="button">Veður</a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://umferdin.is/en"
+                               target="_blank" type="button">Umferðin</a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://safetravel.is/"
+                               target="_blank" type="button">Safetravel</a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://guidetoiceland.is/"
+                               target="_blank" type="button">Guide to Iceland</a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://reddit.com/r/VisitingIceland/"
+                               target="_blank" type="button">/r/VisitingIceland</a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                              <button class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" data-toggle="dropdown"
+                               data-display="static" aria-haspopup="true" aria-expanded="false">
+                               <i class="fas fa-ellipsis-h"></i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right bg-dark-tertiary p-2 shadow animated--grow-in">
+                                <a class="dropdown-item dropdown-link-item" href="https://visiticeland.com/"
+                                 target="_blank">Visit Iceland</a>
+                                <a class="dropdown-item dropdown-link-item" href="https://visitwestmanislands.com/"
+                                 target="_blank">Westman Islands</a>
+                                <a class="dropdown-item dropdown-link-item" href="https://herjolfur.is/en"
+                                 target="_blank">Herjólfur Ferry</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -734,7 +480,7 @@
             <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2024-07-17</span>
+                        <span>Last Modified 2025-12-20</span>
                     </div>
                 </div>
             </footer>
@@ -750,6 +496,34 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
+
+    <!-- Big Bend - Panther Junction Webcam Modal -->
+    <div class="modal fade" id="pantherJunctionModal" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-webcam">
+        <div class="modal-content modal-dark">
+          <div class="modal-body">
+            <a href="https://www.nps.gov/media/webcam/view.htm?id=EE11A8B1-EE17-7C0C-8C0AF4FE6CF5CD48" target="_blank">
+              <img src="https://www.nps.gov/featurecontent/ard/webcams/images/bibelarge.jpg" class="card-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Old Faithful Video Modal -->
+    <div class="modal fade" id="oldFaithfulModal" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-webcam">
+        <div class="modal-content modal-dark">
+          <div class="modal-body">
+            <div class="video-container">
+              <video class="img-rounded" id="oldFaithfulVideo" controls crossorigin playsinline
+                poster="https://cdn.pixelcaster.com/public.pixelcaster.com/snapshots/yellowstone-old-faithful/latest.jpg?latest">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Countdown Modal -->
     <div class="modal fade" id="countdownModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -840,9 +614,12 @@
     <script src="/js/sb-admin-2.min.js"></script>
     <script src="/js/jquery.countdown.min.js"></script>
     <script src="/js/custom-common.min.js"></script>
+    <script src="/js/custom-components.min.js"></script>
 
     <!-- Custom scripts for this page-->
-    <script src="/js/pages/index.min.js"></script>
+    <script src="/js/hls.min.js"></script>
+    <script src="/js/plyr.min.js"></script>
+    <script src="/js/pages/other-links.min.js"></script>
 
 </body>
 
