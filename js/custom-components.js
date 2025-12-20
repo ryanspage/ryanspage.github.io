@@ -38,8 +38,14 @@
     }
   );
 
-  // Realign open dropdown submenu when window is resized
+  // Set any dropup-xs position on page load
+  $(document).ready(function() {
+    setDropupXSPosition()
+  });
+
+  // Reset any dropup-xs position & realign open dropdown submenu when window is resized
   $(window).resize(function () {
+    setDropupXSPosition();
     const openSubmenus = $('.dropdown-submenu.open');
     adjustSubmenuAlignment(openSubmenus);
   });
@@ -74,6 +80,19 @@
     }
 
     $dropdownMenu.css({ visibility: '', display: '' });
+  }
+
+  // Set dropup-xs position using window size
+  function setDropupXSPosition() {
+    const $dropupXs = $('.dropup-xs');
+
+    // Dropup when window is smaller than 576px
+    if (window.innerWidth < 576) {
+      $dropupXs.addClass('dropup')
+    }
+    else {
+      $dropupXs.removeClass('dropup')
+    }
   }
 
 })(jQuery); // End of use strict
