@@ -41,6 +41,14 @@
                      'paradise_inn.jpg', 'paradise_valley.jpg', 'rainier_marmot.jpg', 'seattle_queen_anne.jpg', 'space_needle.jpg',
                      'tatoosh_range.jpg', 'winthrop_glacier.jpg']
   }
+  else if (galleryNum == 3) {
+    $("#galleryTitle").text("Big Bend 2026");
+    galleryPath = '/img/photography/gallery-3/';
+    galleryImages = ['balanced_rock_1.jpg', 'balanced_rock_2.jpg', 'balanced_rock_3.jpg', 'cerro_castellan.jpg', 'chisos_window_sunset.jpg',
+                    'grapevine_hills.jpg', 'pine_canyon_1.jpg', 'pine_canyon_2.jpg', 'pine_canyon_road.jpg', 'rio_grande_village_sunset_1.jpg',
+                    'rio_grande_village_sunset_2.jpg', 'rio_grande_village_sunset_3.jpg', 'sierra_del_carmen_1.jpg', 'sierra_del_carmen_2.jpg',
+                    'window_oak_spring_1.jpg', 'window_oak_spring_2.jpg', 'window_oak_spring_3.jpg', 'window_oak_spring_4.jpg']
+  }
 
   $(document).ready(function(){
 
