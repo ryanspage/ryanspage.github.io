@@ -16423,6 +16423,15 @@ body.sidebar-toggled footer.sticky-footer {
   }
 }
 
+/* Button Group Spacing */
+.btn-group-gap {
+  gap: 0.1rem;
+}
+
+.btn-group-gap.btn-group-gap-wrap {
+  row-gap: 0.3rem;
+}
+
 /* Placeholder Text */
 input::-webkit-input-placeholder {
   color: #95a2af !important;

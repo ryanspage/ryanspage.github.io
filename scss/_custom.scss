@@ -22,6 +22,15 @@
   }
 }
 
+/* Button Group Spacing */
+.btn-group-gap {
+  gap: 0.1rem;
+
+  &.btn-group-gap-wrap {
+    row-gap: 0.3rem;
+  }
+}
+
 /* Placeholder Text */
 input {
   &::-webkit-input-placeholder { // Chrome/Opera/Safari
