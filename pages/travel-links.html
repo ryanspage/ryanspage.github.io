@@ -422,105 +422,154 @@
 
                   </div>
 
-                  <!-- Reykjavík Weather Widget Card -->
-                  <div class="row" id="weather-reykjavik">
-                      <div class="col mb-4">
-                          <div class="card shadow h-100">
-                              <div class="card-body">
-                                <a class="weatherwidget-io" href="https://forecast7.com/en/64d13n21d82/reykjavik/"
-                                data-label_1="REYKJAVÍK, ISL" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
-                                data-days="5" data-theme="weather_one"></a>
-                                <script>
-                                  !function (d,s,id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (!d.getElementById(id)) {
-                                      js = d.createElement(s);
-                                      js.id = id;
-                                      js.src = 'https://weatherwidget.io/js/widget.min.js';
-                                      fjs.parentNode.insertBefore(js,fjs);
-                                    }
-                                  } (document,'script','weatherwidget-io-js');
-                                </script>
+                  <!-- Future Trip Weather Widget Card -->
+                  <!-- <div class="row" id="weather-future-trip">
+                        <div class="col mb-4">
+                            <div class="card shadow h-100">
+                                <div class="card-body">
+                                  <a class="weatherwidget-io" href="https://forecast7.com/en/30d66n95d54/77340/?unit=us"
+                                  data-label_1="HUNTSVILLE, TX" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
+                                  data-days="5" data-theme="weather_one"></a>
+                                  <script>
+                                    !function (d,s,id) {
+                                      var js, fjs = d.getElementsByTagName(s)[0];
+                                      if (!d.getElementById(id)) {
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                                        fjs.parentNode.insertBefore(js,fjs);
+                                      }
+                                    } (document,'script','weatherwidget-io-js');
+                                  </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                  <!-- Future Trip Link Card -->
+                  <div class="row"> <!-- Temp Hidden (card-body row d-none) -->
+
+                      <div class="col-12 mb-4">
+                        <div class="card border-top-light-custom text-center shadow h-100 pt-2">
+                          <div class="card-header">Future Trip TBD</div>
+                          <div class="card-body p-2">
+                            <div class="row justify-center no-gutters d-none">
+                              <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                <a class="btn btn-outline-light-custom btn-outline-dark-text btn-sm btn-block"
+                                 target="_blank" type="button">Link 1</a>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- Upcoming Trip Link Card -->
-                  <div class="row">
-
-                    <div class="col-12 mb-4">
-                      <div class="card border-top-info-custom text-center shadow h-100 pt-2">
-                        <div class="card-header">Iceland - Summer 2026</div>
-                        <div class="card-body p-2">
-                          <div class="row justify-center no-gutters">
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://en.vedur.is/"
-                               target="_blank" type="button">Veður</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://umferdin.is/en"
-                               target="_blank" type="button">Umferðin</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://faerd.is/en"
-                               target="_blank" type="button">Færð</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://vegasja.vegagerdin.is/eng/"
-                               target="_blank" type="button">Vegasjá</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://safetravel.is/"
-                               target="_blank" type="button">Safetravel</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://parka.app/?_lang=en"
-                               target="_blank" type="button">Parka</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://icelandair.com/"
-                               target="_blank" type="button">Icelandair</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://lotuscarrental.is/"
-                               target="_blank" type="button">Lotus Car Rental</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://guidetoiceland.is/"
-                               target="_blank" type="button">Guide to Iceland</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://epiciceland.net/"
-                               target="_blank" type="button">Epic Iceland</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
-                              <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://reddit.com/r/VisitingIceland/"
-                               target="_blank" type="button">/r/VisitingIceland</a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-4 my-1 px-1 dropup">
-                              <button class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" data-toggle="dropdown"
-                               data-display="static" aria-haspopup="true" aria-expanded="false">
-                               <i class="fas fa-ellipsis-h"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right bg-dark-tertiary p-2 shadow animated--grow-in">
-                                <a class="dropdown-item dropdown-link-item" href="https://visiticeland.com/"
-                                 target="_blank">Visit Iceland</a>
-                                <a class="dropdown-item dropdown-link-item" href="https://visitwestmanislands.com/"
-                                 target="_blank">Westman Islands</a>
-                                <a class="dropdown-item dropdown-link-item" href="https://herjolfur.is/en"
-                                 target="_blank">Herjólfur Ferry</a>
-                                <a class="dropdown-item dropdown-link-item" href="https://gasvaktin.is/"
-                                 target="_blank">Gasvaktin</a>
-                                <a class="dropdown-item dropdown-link-item" href="https://youtube.com/watch?v=gm2YafWT-pk"
-                                 target="_blank">Iceland Now <i class="fas fa-video fa-fw"></i></a>
+                              <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                <a class="btn btn-outline-light-custom btn-outline-dark-text btn-sm btn-block"
+                                 target="_blank" type="button">Link 2</a>
+                              </div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                <a class="btn btn-outline-light-custom btn-outline-dark-text btn-sm btn-block"
+                                 target="_blank" type="button">Link 3</a>
+                              </div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                <a class="btn btn-outline-light-custom btn-outline-dark-text btn-sm btn-block"
+                                 target="_blank" type="button">Link 4</a>
+                              </div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                <a class="btn btn-outline-light-custom btn-outline-dark-text btn-sm btn-block"
+                                 target="_blank" type="button">Link 5</a>
+                              </div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                <a class="btn btn-outline-light-custom btn-outline-dark-text btn-sm btn-block"
+                                 target="_blank" type="button">Link 6</a>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
+
                     </div>
 
+                  <!-- Past Trips Link Cards -->
+                  <div class="accordion-container">
+
+                      <!-- Iceland - Summer 2026 Link Card -->
+                      <div class="collapse section-item" id="past-trip-1">
+                        <div class="row">
+                          <div class="col-12 mb-4">
+                            <div class="card border-top-info-custom text-center shadow h-100 pt-2">
+                              <div class="card-header">Iceland - Summer 2026</div>
+                              <div class="card-body p-2">
+                                <div class="row justify-center no-gutters">
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://en.vedur.is/"
+                                     target="_blank" type="button">Veður</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://umferdin.is/en"
+                                     target="_blank" type="button">Umferðin</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://faerd.is/en"
+                                     target="_blank" type="button">Færð</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://vegasja.vegagerdin.is/eng/"
+                                     target="_blank" type="button">Vegasjá</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://safetravel.is/"
+                                     target="_blank" type="button">Safetravel</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://parka.app/?_lang=en"
+                                     target="_blank" type="button">Parka</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://icelandair.com/"
+                                     target="_blank" type="button">Icelandair</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://lotuscarrental.is/"
+                                     target="_blank" type="button">Lotus Car Rental</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://guidetoiceland.is/"
+                                     target="_blank" type="button">Guide to Iceland</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://epiciceland.net/"
+                                     target="_blank" type="button">Epic Iceland</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1">
+                                    <a class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" href="https://reddit.com/r/VisitingIceland/"
+                                     target="_blank" type="button">/r/VisitingIceland</a>
+                                  </div>
+                                  <div class="col-12 col-sm-6 col-xl-4 my-1 px-1 dropup">
+                                    <button class="btn btn-outline-info-custom btn-outline-dark-text btn-sm btn-block" data-toggle="dropdown"
+                                     data-display="static" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right bg-dark-tertiary p-2 shadow animated--grow-in">
+                                      <a class="dropdown-item dropdown-link-item" href="https://visiticeland.com/"
+                                       target="_blank">Visit Iceland</a>
+                                      <a class="dropdown-item dropdown-link-item" href="https://visitwestmanislands.com/"
+                                       target="_blank">Westman Islands</a>
+                                      <a class="dropdown-item dropdown-link-item" href="https://herjolfur.is/en"
+                                       target="_blank">Herjólfur Ferry</a>
+                                      <a class="dropdown-item dropdown-link-item" href="https://gasvaktin.is/"
+                                       target="_blank">Gasvaktin</a>
+                                      <a class="dropdown-item dropdown-link-item" href="https://youtube.com/watch?v=gm2YafWT-pk"
+                                       target="_blank">Iceland Now <i class="fas fa-video fa-fw"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+
+                  <!-- View/Hide Past Trips Button -->
+                  <div class="col text-center">
+                      <button type="button" id="btn-past-trips" class="btn btn-success-custom mb-4">View Past Trips</button>
                   </div>
 
                 </div>
@@ -533,7 +582,7 @@
             <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2026-07-22</span>
+                        <span>Last Modified 2026-07-25</span>
                     </div>
                 </div>
             </footer>
@@ -644,7 +693,7 @@
     <!-- Custom scripts for this page-->
     <script src="/js/hls.min.js"></script>
     <script src="/js/plyr.min.js"></script>
-    <script src="/js/pages/other-links.min.js"></script>
+    <script src="/js/pages/travel-links.min.js"></script>
 
 </body>
 
