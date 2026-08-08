@@ -49,6 +49,19 @@
                     'rio_grande_village_sunset_2.jpg', 'rio_grande_village_sunset_3.jpg', 'sierra_del_carmen_1.jpg', 'sierra_del_carmen_2.jpg',
                     'window_oak_spring_1.jpg', 'window_oak_spring_2.jpg', 'window_oak_spring_3.jpg', 'window_oak_spring_4.jpg']
   }
+  else if (galleryNum == 4) {
+    $("#galleryTitle").text("Iceland 2026");
+    galleryPath = '/img/photography/gallery-4/';
+    galleryImages = ['dyrholaey.jpg', 'dyrholaey_puffins_1.jpg', 'dyrholaey_puffins_2.jpg', 'dyrholaey_puffins_3.jpg', 'dyrholaey_puffins_4.jpg',
+                     'dyrholaey_puffins_5.jpg', 'dyrholaey_puffins_6.jpg', 'dyrholaey_puffins_7.jpg', 'fjadrargljufur_1.jpg', 'fjadrargljufur_2.jpg',
+                     'gullfoss.jpg', 'haifoss_1.jpg', 'haifoss_2.jpg', 'haifoss_3.jpg', 'hallgrimskirkja.jpg', 'jokulsarlon_1.jpg', 'jokulsarlon_2.jpg',
+                     'kviarjokull.jpg', 'landmannalaugar_1.jpg', 'landmannalaugar_2.jpg', 'landmannalaugar_3.jpg', 'landmannalaugar_4.jpg',
+                     'landmannalaugar_5.jpg', 'landmannalaugar_6.jpg', 'landmannalaugar_7.jpg', 'landmannalaugar_8.jpg', 'reykjavik_1.jpg',
+                     'reykjavik_2.jpg', 'seljalandsfoss_1.jpg', 'seljalandsfoss_2.jpg', 'seljalandsfoss_3.jpg', 'skaftafell_1.jpg', 'skaftafell_2.jpg',
+                     'skaftafell_3.jpg', 'skogafoss.jpg', 'skogar_museum.jpg', 'sun_voyager.jpg', 'svartifoss_1.jpg', 'svartifoss_2.jpg',
+                     'svinafellsjokull_1.jpg', 'svinafellsjokull_2.jpg', 'thingvellir_1.jpg', 'thingvellir_2.jpg', 'vestmannaeyjar_puffins_1.jpg',
+                     'vestmannaeyjar_puffins_2.jpg', 'vestmannaeyjar_puffins_3.jpg', 'vestmannaeyjar_puffins_4.jpg', 'vestmannaeyjar_puffins_5.jpg']
+  }
 
   $(document).ready(function(){
 
