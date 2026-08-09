@@ -70,7 +70,7 @@
                     <span>Ancient World</span>
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
-                    <div class="bg-dark-tertiary py-2 collapse-inner rounded">
+                    <div class="bg-dark-tertiary py-2 collapse-inner rounded text-center">
                         <a class="collapse-item" href="/pages/roman-history.html">Roman History</a>
                         <a class="collapse-item" href="/pages/latin-greek.html">Latin + Ἑλληνική</a>
                     </div>
@@ -92,7 +92,7 @@
                     <span>Photography</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-dark-tertiary py-2 collapse-inner rounded">
+                    <div class="bg-dark-tertiary py-2 collapse-inner rounded text-center">
                         <a class="collapse-item" href="/pages/photography.html?gallery=1">Yellowstone 2024</a>
                         <a class="collapse-item" href="/pages/photography.html?gallery=2">Mount Rainier 2025</a>
                         <a class="collapse-item" href="/pages/photography.html?gallery=3">Big Bend 2026</a>
@@ -301,7 +301,7 @@
                           </a>
                           <!-- Dropdown - Weather Location -->
                           <div class="dropdown-menu dropdown-menu-right bg-dark-tertiary p-2 shadow animated--grow-in"
-                            aria-labelledby="searchDropdown" style="max-width:max-content">
+                            aria-labelledby="locationDropdown" style="max-width:max-content">
                             <!-- Location Selection -->
                             <form class="form-inline justify-content-center">
                               <div class="btn-group-vertical btn-group-toggle btn-group-gap flex-wrap" data-toggle="buttons">
@@ -320,6 +320,10 @@
                                 <label id="btn-location-yellowstone" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
                                 <input type="radio" class="btn-check" name="section" autocomplete="off">
                                 Yellowstone NP
+                                </label>
+                                <label id="btn-location-reykjavik" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
+                                <input type="radio" class="btn-check" name="section" autocomplete="off">
+                                Reykjavík, ISL
                                 </label>
                               </div>
                             </form>
@@ -506,6 +510,30 @@
                                 <div class="card-body">
                                   <a class="weatherwidget-io" href="https://forecast7.com/en/44d43n110d59/yellowstone-national-park/?unit=us"
                                   data-label_1="YELLOWSTONE NP" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
+                                  data-days="5" data-theme="weather_one"></a>
+                                  <script>
+                                    !function (d,s,id) {
+                                      var js, fjs = d.getElementsByTagName(s)[0];
+                                      if (!d.getElementById(id)) {
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                                        fjs.parentNode.insertBefore(js,fjs);
+                                      }
+                                    } (document,'script','weatherwidget-io-js');
+                                  </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reykjavík Weather Widget Card -->
+                    <div class="row d-none" id="weather-reykjavik">
+                        <div class="col mb-4">
+                            <div class="card shadow h-100">
+                                <div class="card-body">
+                                  <a class="weatherwidget-io" href="https://forecast7.com/en/64d13n21d82/reykjavik/"
+                                  data-label_1="REYKJAVÍK, ISL" data-label_2="Weather" data-font="Noto Sans" data-icons="Climacons Animated"
                                   data-days="5" data-theme="weather_one"></a>
                                   <script>
                                     !function (d,s,id) {
@@ -736,7 +764,7 @@
             <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2024-07-17</span>
+                        <span>Last Modified 2026-08-09</span>
                     </div>
                 </div>
             </footer>

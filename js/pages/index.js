@@ -6,6 +6,7 @@
     $("#weather-bloomington").addClass("d-none");
     $("#weather-big-bend").addClass("d-none");
     $("#weather-yellowstone").addClass("d-none");
+    $("#weather-reykjavik").addClass("d-none");
     setTimeout(() => { $("#weather-huntsville").removeClass("d-none"); }, 100);
   });
 
@@ -14,6 +15,7 @@
     $("#weather-huntsville").addClass("d-none");
     $("#weather-big-bend").addClass("d-none");
     $("#weather-yellowstone").addClass("d-none");
+    $("#weather-reykjavik").addClass("d-none");
     setTimeout(() => { $("#weather-bloomington").removeClass("d-none"); }, 100);
   });
 
@@ -22,6 +24,7 @@
     $("#weather-huntsville").addClass("d-none");
     $("#weather-bloomington").addClass("d-none");
     $("#weather-yellowstone").addClass("d-none");
+    $("#weather-reykjavik").addClass("d-none");
     setTimeout(() => { $("#weather-big-bend").removeClass("d-none"); }, 100);
   });
 
@@ -30,7 +33,17 @@
     $("#weather-huntsville").addClass("d-none");
     $("#weather-bloomington").addClass("d-none");
     $("#weather-big-bend").addClass("d-none");
+    $("#weather-reykjavik").addClass("d-none");
     setTimeout(() => { $("#weather-yellowstone").removeClass("d-none"); }, 100);
+  });
+
+  /* Toggle Weather Display - Show Reykjavík & Hide Other Locations */
+  $("#btn-location-reykjavik").on('click', function (event) {
+    $("#weather-huntsville").addClass("d-none");
+    $("#weather-bloomington").addClass("d-none");
+    $("#weather-big-bend").addClass("d-none");
+    $("#weather-yellowstone").addClass("d-none");
+    setTimeout(() => { $("#weather-reykjavik").removeClass("d-none"); }, 100);
   });
 
 })(jQuery); // End of use strict
