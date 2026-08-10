@@ -305,26 +305,32 @@
                             <!-- Location Selection -->
                             <form class="form-inline justify-content-center">
                               <div class="btn-group-vertical btn-group-toggle btn-group-gap flex-wrap" data-toggle="buttons">
+                                <!-- Default Visible Locations -->
                                 <label id="btn-location-huntsville" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown active">
-                                <input type="radio" class="btn-check" name="section" autocomplete="off" checked>
-                                Huntsville, TX
-                                </label>
-                                <label id="btn-location-bloomington" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
-                                <input type="radio" class="btn-check" name="section" autocomplete="off">
-                                Bloomington, IL
-                                </label>
-                                <label id="btn-location-big-bend" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
-                                <input type="radio" class="btn-check" name="section" autocomplete="off">
-                                Big Bend NP
-                                </label>
-                                <label id="btn-location-yellowstone" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
-                                <input type="radio" class="btn-check" name="section" autocomplete="off">
-                                Yellowstone NP
-                                </label>
-                                <label id="btn-location-reykjavik" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
-                                <input type="radio" class="btn-check" name="section" autocomplete="off">
-                                Reykjavík, ISL
-                                </label>
+                              	<input type="radio" class="btn-check" name="section" autocomplete="off" checked>
+                              	Huntsville, TX
+                              	</label>
+                              	<label id="btn-location-bloomington" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1">
+                              	<input type="radio" class="btn-check" name="section" autocomplete="off">
+                              	Bloomington, IL
+                              	</label>
+                              	<!-- Hidden Locations -->
+                              	<label id="btn-location-big-bend" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1 d-none">
+                              	<input type="radio" class="btn-check" name="section" autocomplete="off">
+                              	Big Bend NP
+                              	</label>
+                              	<label id="btn-location-yellowstone" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1 d-none">
+                              	<input type="radio" class="btn-check" name="section" autocomplete="off">
+                              	Yellowstone NP
+                              	</label>
+                              	<label id="btn-location-reykjavik" class="btn btn-outline-success-custom btn-outline-dark-text btn-group-dropdown mt-1 d-none">
+                              	<input type="radio" class="btn-check" name="section" autocomplete="off">
+                              	Reykjavík, ISL
+                              	</label>
+                              	<!-- Show All Locations Button -->
+                              	<button type="button" id="btn-show-all-locations" class="btn btn-outline-success-custom btn-group-dropdown mt-1"
+                              	aria-pressed="true"><i class="fas fa-ellipsis-h"></i>
+                              	</button>
                               </div>
                             </form>
                           </div>
@@ -764,7 +770,7 @@
             <footer class="sticky-footer bg-dark-tertiary">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Last Modified 2026-08-09</span>
+                        <span>Last Modified 2026-08-10</span>
                     </div>
                 </div>
             </footer>

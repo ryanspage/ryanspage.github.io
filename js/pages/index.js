@@ -1,6 +1,14 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  /* Display All Weather Location Selection Buttons */
+  $('#btn-show-all-locations').on('click', function (event) {
+	  $('#btn-location-big-bend').removeClass('d-none');
+	  $('#btn-location-yellowstone').removeClass('d-none');
+	  $('#btn-location-reykjavik').removeClass('d-none');
+	  $(this).addClass('d-none');
+  });
+
   /* Toggle Weather Display - Show Huntsville & Hide Other Locations */
   $("#btn-location-huntsville").on('click', function (event) {
     $("#weather-bloomington").addClass("d-none");
