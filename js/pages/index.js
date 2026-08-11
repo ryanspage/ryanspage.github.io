@@ -1,6 +1,19 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  /* Collapse Weather Location Selection Dropdown on Close */
+  $('#dropdown-wx-locations').on('hidden.bs.dropdown', function (event) {
+    if (!$('#btn-location-huntsville').hasClass('active') && !$('#btn-location-bloomington').hasClass('active')) {
+      $('#btn-show-all-locations').removeClass('d-none').addClass('active');
+    }
+    else {
+      $('#btn-show-all-locations').removeClass('d-none active');
+    }
+    $('#btn-location-big-bend').addClass('d-none');
+    $('#btn-location-yellowstone').addClass('d-none');
+    $('#btn-location-reykjavik').addClass('d-none');
+  });
+
   /* Display All Weather Location Selection Buttons */
   $('#btn-show-all-locations').on('click', function (event) {
 	  $('#btn-location-big-bend').removeClass('d-none');
