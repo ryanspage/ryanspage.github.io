@@ -16,10 +16,10 @@
 
   /* Display All Weather Location Selection Buttons */
   $('#btn-show-all-locations').on('click', function (event) {
-	  $(this).addClass('d-none');
+    $(this).addClass('d-none');
     $('#btn-location-big-bend').removeClass('d-none');
-	  $('#btn-location-yellowstone').removeClass('d-none');
-	  $('#btn-location-reykjavik').removeClass('d-none');
+    $('#btn-location-yellowstone').removeClass('d-none');
+    $('#btn-location-reykjavik').removeClass('d-none');
   });
 
   /* Toggle Weather Display - Show Huntsville & Hide Other Locations */
