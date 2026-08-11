@@ -3,23 +3,23 @@
 
   /* Collapse Weather Location Selection Dropdown on Close */
   $('#dropdown-wx-locations').on('hidden.bs.dropdown', function (event) {
+    $('#btn-location-big-bend').addClass('d-none');
+    $('#btn-location-yellowstone').addClass('d-none');
+    $('#btn-location-reykjavik').addClass('d-none');
     if (!$('#btn-location-huntsville').hasClass('active') && !$('#btn-location-bloomington').hasClass('active')) {
-      $('#btn-show-all-locations').removeClass('d-none').addClass('active');
+      $('#btn-show-all-locations').addClass('active').removeClass('d-none');
     }
     else {
       $('#btn-show-all-locations').removeClass('d-none active');
     }
-    $('#btn-location-big-bend').addClass('d-none');
-    $('#btn-location-yellowstone').addClass('d-none');
-    $('#btn-location-reykjavik').addClass('d-none');
   });
 
   /* Display All Weather Location Selection Buttons */
   $('#btn-show-all-locations').on('click', function (event) {
-	  $('#btn-location-big-bend').removeClass('d-none');
+	  $(this).addClass('d-none');
+    $('#btn-location-big-bend').removeClass('d-none');
 	  $('#btn-location-yellowstone').removeClass('d-none');
 	  $('#btn-location-reykjavik').removeClass('d-none');
-	  $(this).addClass('d-none');
   });
 
   /* Toggle Weather Display - Show Huntsville & Hide Other Locations */
