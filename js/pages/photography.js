@@ -13,9 +13,6 @@
   const urlParams = new URLSearchParams(window.location.search);
   const galleryNum = urlParams.get('gallery');
 
-  // Set the sidebar nav link active
-  $("#gallery-nav-link-" + galleryNum).addClass("active");
-
   // Gallery file path and images
   let galleryPath = ''
   let galleryImages = []

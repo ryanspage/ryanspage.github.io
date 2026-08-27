@@ -12,6 +12,8 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+const fileinclude = require("gulp-file-include");
+const gulpif = require("gulp-if");
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -123,21 +125,38 @@ function js() {
     .pipe(browsersync.stream());
 }
 
+// HTML Component Parsing and Target Split Task
+function html() {
+  return gulp
+    .src(["./html/**/*.html", "!./html/components/**"])
+    .pipe(plumber())
+    .pipe(fileinclude({
+      prefix: "@@",
+      basepath: "@file",
+      indent: true
+    }))
+    // Sends index.html directly to project root ./
+    .pipe(gulpif("**/index.html", gulp.dest("./")))
+    // Sends all other secondary layout files to your ./pages/ folder
+    .pipe(gulpif(file => !file.path.endsWith("index.html"), gulp.dest("./pages/")));
+}
+
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
   gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
-  gulp.watch("./**/*.html", browserSyncReload);
+  gulp.watch("./html/**/*.html", gulp.series(html, browserSyncReload));
 }
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
-const build = gulp.series(vendor, gulp.parallel(css, js));
+const build = gulp.series(vendor, gulp.parallel(css, js, html));
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
 // Export tasks
 exports.css = css;
 exports.js = js;
+exports.html = html;
 exports.clean = clean;
 exports.vendor = vendor;
 exports.build = build;
