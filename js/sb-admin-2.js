@@ -8,7 +8,14 @@
           try {
               const url = new URL(urlStr, window.location.href);
               if (url.origin !== window.location.origin) return null;
-              return url.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+              let path = url.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+
+              // Treat '/'' and '/index.html' as the same page
+              if (path === 'index.html') {
+                path = '';
+              }
+
+              return path;
           } catch (e) {
               return null;
           }
@@ -17,7 +24,7 @@
       const currentUrl = new URL(window.location.href);
       const currentPath = normalizePath(window.location.href);
 
-      if (!currentPath) return;
+      if (currentPath === null) return;
 
       let matched = false;
 
@@ -31,7 +38,7 @@
 
           const linkUrl = new URL(rawHref, window.location.href);
           const linkPath = normalizePath(linkUrl.href);
-          if (!linkPath) return;
+          if (linkPath === null) return;
 
           // Check path match (exact or sub-path)
           const isPathMatch = (linkPath === currentPath) ||
