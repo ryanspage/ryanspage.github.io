@@ -11,13 +11,17 @@
 
   // Get the URL gallery parameter
   const urlParams = new URLSearchParams(window.location.search);
-  const galleryNum = urlParams.get('gallery');
+  const galleryId = urlParams.get('gallery');
+
+  // Default gallery display settings
+  let randomOrder = true
+  let showCaptions = false
 
   // Gallery file path and images
   let galleryPath = ''
   let galleryImages = []
 
-  if (galleryNum == 1) {
+  if (galleryId == 1) {
     $("#galleryTitle").text("Yellowstone & Grand Teton 2024");
     galleryPath = '/img/photography/gallery-1/';
     galleryImages = ['anemone_geyser.jpg', 'beehive_geyser_1.jpg', 'beehive_geyser_2.jpg', 'cascade_canyon_1.jpg', 'cascade_canyon_2.jpg',
@@ -28,7 +32,7 @@
                      'old_faithful_4.jpg', 'old_faithful_5.jpg', 'old_faithful_inn.jpg', 'riverside_geyser.jpg', 'steamboat_geyser.jpg',
                      'white_dome_geyser.jpg', 'yellowstone_falls_1.jpg', 'yellowstone_falls_2.jpg', 'yellowstone_falls_3.jpg'];
   }
-  else if (galleryNum == 2) {
+  else if (galleryId == 2) {
     $("#galleryTitle").text("Mount Rainier & Olympic 2025");
     galleryPath = '/img/photography/gallery-2/';
     galleryImages = ['lake_crescent.jpg', 'marymere_falls.jpg', 'mount_rainier_burroughs_1.jpg', 'mount_rainier_burroughs_2.jpg',
@@ -38,7 +42,7 @@
                      'paradise_inn.jpg', 'paradise_valley.jpg', 'rainier_marmot.jpg', 'seattle_queen_anne.jpg', 'space_needle.jpg',
                      'tatoosh_range.jpg', 'winthrop_glacier.jpg']
   }
-  else if (galleryNum == 3) {
+  else if (galleryId == 3) {
     $("#galleryTitle").text("Big Bend 2026");
     galleryPath = '/img/photography/gallery-3/';
     galleryImages = ['balanced_rock_1.jpg', 'balanced_rock_2.jpg', 'balanced_rock_3.jpg', 'cerro_castellan.jpg', 'chisos_window_sunset.jpg',
@@ -46,7 +50,7 @@
                     'rio_grande_village_sunset_2.jpg', 'rio_grande_village_sunset_3.jpg', 'sierra_del_carmen_1.jpg', 'sierra_del_carmen_2.jpg',
                     'window_oak_spring_1.jpg', 'window_oak_spring_2.jpg', 'window_oak_spring_3.jpg', 'window_oak_spring_4.jpg']
   }
-  else if (galleryNum == 4) {
+  else if (galleryId == 4) {
     $("#galleryTitle").text("Iceland 2026");
     galleryPath = '/img/photography/gallery-4/';
     galleryImages = ['dyrholaey.jpg', 'dyrholaey_puffins_1.jpg', 'dyrholaey_puffins_2.jpg', 'dyrholaey_puffins_3.jpg', 'dyrholaey_puffins_4.jpg',
@@ -59,24 +63,117 @@
                      'svinafellsjokull_1.jpg', 'svinafellsjokull_2.jpg', 'thingvellir_1.jpg', 'thingvellir_2.jpg', 'vestmannaeyjar_puffins_1.jpg',
                      'vestmannaeyjar_puffins_2.jpg', 'vestmannaeyjar_puffins_3.jpg', 'vestmannaeyjar_puffins_4.jpg', 'vestmannaeyjar_puffins_5.jpg']
   }
+  else if (galleryId == 'coins') {
+    $("#galleryTitle").text("Roman Coins");
+    $("#nav-item-ancient-world").addClass("active");
+    $("#nav-link-roman-history").addClass("active");
+    randomOrder = false
+    showCaptions = true
+    galleryPath = '/img/roman-history/roman-coins/';
+    galleryImages = [['litra_1.jpg', 'Roman Republic (269 BC)'],
+                     ['semuncia_1.jpg', 'Roman Republic (215-212 BC)'],
+                     ['furia_1.jpg', 'Roman Republic (84 BC)'],
+                     ['tiberius_1.jpg', 'Tiberius (14-37 AD)'],
+                     ['claudius_3.jpg', 'Claudius (41-54 AD)'],
+                     ['vespasian_1.jpg', 'Vespasian (69-79 AD)'],
+                     ['trajan_2.jpg', 'Trajan (98-117 AD)'],
+                     ['trajan_3.jpg', 'Trajan (98-117 AD)'],
+                     ['trajan_5.jpg', 'Trajan (98-117 AD)'],
+                     ['hadrian_1.jpg', 'Hadrian (117-138 AD)'],
+                     ['septimius_severus_2.jpg', 'Septimius Severus (193-211 AD)'],
+                     ['maximinus_thrax_1.jpg', 'Maximinus Thrax (235-238 AD)'],
+                     ['aurelian_2.jpg', 'Aurelian (270-275 AD)'],
+                     ['aurelian_8.jpg', 'Aurelian (270-275 AD)'],
+                     ['probus_3.jpg', 'Probus (276-282 AD)'],
+                     ['probus_4.jpg', 'Probus (276-282 AD)'],
+                     ['carus_1.jpg', 'Carus (282-283 AD)'],
+                     ['constantine_1_2.jpg', 'Constantine I (306-337 AD)'],
+                     ['constantine_1_3.jpg', 'Constantine I (306-337 AD)'],
+                     ['urbs_roma_2.jpg', 'Urbs Roma (330-346 AD)'],
+                     ['constantius_2_2.jpg', 'Constantius II (337-361 AD)'],
+                     ['valens_3.jpg', 'Valens (364-378 AD)'],
+                     ['arcadius_2.jpg', 'Arcadius (383-408 AD)']]
+  }
+  else if (galleryId == 'plants') {
+    $("#galleryTitle").text("Cacti & Succulents");
+    $("#nav-item-cacti-succulents").addClass("active");
+    showCaptions = true
+    galleryPath = '/img/cacti-succulents/';
+    galleryImages = [['agave_potatorum.jpg', 'Agave potatorum'],
+                     ['astrophytum_capricorne_1.jpg', 'Astrophytum capricorne'],
+                     ['astrophytum_capricorne_2.jpg', 'Astrophytum capricorne'],
+                     ['echinocereus_davisii_1.jpg', 'Echinocereus davisii'],
+                     ['echinocereus_davisii_2.jpg', 'Echinocereus davisii'],
+                     ['echinocereus_reichenbachii_1.jpg', 'Echinocereus reichenbachii'],
+                     ['echinocereus_reichenbachii_2.jpg', 'Echinocereus reichenbachii'],
+                     ['echinopsis_subdenudata_1.jpg', 'Echinopsis subdenudata'],
+                     ['echinopsis_subdenudata_2.jpg', 'Echinopsis subdenudata'],
+                     ['euphorbia_milii.jpg', 'Euphorbia milii'],
+                     ['gymnocalycium_baldianum.jpg', 'Gymnocalycium baldianum'],
+                     ['gymnocalycium_bruchii_1.jpg', 'Gymnocalycium bruchii'],
+                     ['gymnocalycium_bruchii_2.jpg', 'Gymnocalycium bruchii'],
+                     ['gymnocalycium_friedrichii.jpg', 'Gymnocalycium friedrichii'],
+                     ['gymnocalycium_piricarpum.jpg', 'Gymnocalycium piricarpum'],
+                     ['gymnocalycium_ragonesei.jpg', 'Gymnocalycium ragonesei'],
+                     ['gymnocalycium_saglionis.jpg', 'Gymnocalycium saglionis'],
+                     ['lithops_aucampiae.jpg', 'Lithops aucampiae'],
+                     ['lithops_dorotheae.jpg', 'Lithops dorotheae'],
+                     ['lithops_karasmontana.jpg', 'Lithops karasmontana'],
+                     ['lithops_lesliei.jpg', 'Lithops lesliei'],
+                     ['lithops_pseudotruncatella.jpg', 'Lithops pseudotruncatella'],
+                     ['mammillaria_bocasana.jpg', 'Mammillaria bocasana'],
+                     ['mammillaria_guelzowiana_1.jpg', 'Mammillaria guelzowiana'],
+                     ['mammillaria_guelzowiana_2.jpg', 'Mammillaria guelzowiana'],
+                     ['mammillaria_hahniana_1.jpg', 'Mammillaria hahniana'],
+                     ['mammillaria_hahniana_2.jpg', 'Mammillaria hahniana'],
+                     ['oreocereus_celsianus.jpg', 'Oreocereus celsianus'],
+                     ['parodia_werneri_1.jpg', 'Parodia werneri'],
+                     ['parodia_werneri_2.jpg', 'Parodia werneri'],
+                     ['rebutia_albipilosa_1.jpg', 'Rebutia albipilosa'],
+                     ['rebutia_albipilosa_2.jpg', 'Rebutia albipilosa'],
+                     ['rebutia_krainziana.jpg', 'Rebutia krainziana'],
+                     ['rebutia_narvaecensis.jpg', 'Rebutia narvaecensis'],
+                     ['setiechinopsis_mirabilis_1.jpg', 'Setiechinopsis mirabilis'],
+                     ['setiechinopsis_mirabilis_2.jpg', 'Setiechinopsis mirabilis']]
+  }
 
   $(document).ready(function(){
 
     // Randomize gallery image order
-    shuffle(galleryImages);
+    if (randomOrder) {
+      shuffle(galleryImages);
+    }
 
     // Create gallery of images
-    for (var i = 0; i < galleryImages.length; i++) {
-      $("#gallery").append(
-        '<div class=\"gallery-image col-12 col-sm-6 col-lg-4 mb-4\" style=\"display:none\">' +
-          '<div class=\"card shadow h-100\">' +
-            '<div class=\"card-body p-2\">' +
-              '<a href=\"' + galleryPath + galleryImages[i] + '\" data-toggle=\"lightbox\" data-gallery=\"gallery\" data-max-width=\"900\">' +
-                '<img src=\"' + galleryPath + galleryImages[i] + '\" class=\"card-img\" loading=\"lazy\">' +
-              '</a>' +
+    if (showCaptions) {
+      for (var i = 0; i < galleryImages.length; i++) {
+        $("#gallery").append(
+          '<div class=\"gallery-image col-12 col-sm-6 col-lg-4 mb-4\" style=\"display:none\">' +
+            '<div class=\"card shadow h-100\">' +
+              '<div class=\"card-body p-2\">' +
+                '<a href=\"' + galleryPath + galleryImages[i][0] + '\" data-toggle=\"lightbox\" data-gallery=\"gallery\" data-max-width=\"900\">' +
+                  '<img src=\"' + galleryPath + galleryImages[i][0] + '\" class=\"card-img\" loading=\"lazy\">' +
+                '</a>' +
+                '<div class=\"card-header mt-0 p-1">' +
+                  '<p class=\"card-text image-caption font-italic text-body text-center">' + galleryImages[i][1] + '</p>' +
+                '</div>' +
+              '</div>' +
             '</div>' +
-          '</div>' +
-        '</div>');
+          '</div>');
+      }
+    } else {
+      for (var i = 0; i < galleryImages.length; i++) {
+        $("#gallery").append(
+          '<div class=\"gallery-image col-12 col-sm-6 col-lg-4 mb-4\" style=\"display:none\">' +
+            '<div class=\"card shadow h-100\">' +
+              '<div class=\"card-body p-2\">' +
+                '<a href=\"' + galleryPath + galleryImages[i] + '\" data-toggle=\"lightbox\" data-gallery=\"gallery\" data-max-width=\"900\">' +
+                  '<img src=\"' + galleryPath + galleryImages[i] + '\" class=\"card-img\" loading=\"lazy\">' +
+                '</a>' +
+              '</div>' +
+            '</div>' +
+          '</div>');
+      }
     }
 
     // Display first gallery images
