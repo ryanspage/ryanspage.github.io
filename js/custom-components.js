@@ -54,6 +54,10 @@
   function adjustSubmenuAlignment($submenu) {
     const $dropdownMenu = $submenu.children('.dropdown-menu');
 
+    if (!$dropdownMenu.length) {
+      return;
+    }
+
     $submenu.removeClass('dropdown-submenu-left dropdown-submenu-right');
     $submenu.addClass('dropdown-submenu-right');
 
